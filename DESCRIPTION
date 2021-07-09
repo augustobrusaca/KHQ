@@ -1,0 +1,24 @@
+Package: KHQ
+Title: Methods for Analysing 'KHQ' Data and Calculating 'KHQ5D' Index Scores
+Version: 0.0.0.9
+Authors@R: 
+    person(given = "Luiz Augusto",
+           family = "Brusaca",
+           role = c("aut", "cre"),
+           email = "augustobrusaca@gmail.com",
+           comment = c(ORCID = "0000-0001-8201-6433"))
+Description: The KHQ is a disease-specific, self-administered questionnaire 
+  designed specific to assess the impact of Urinary incontinence (UI) on QoL. 
+  The questionnaire was developed by Kelleher and collaborators in 1997. It is 
+  a simple, acceptable and reliable measure to use in the clinical setting and 
+  a research tool that is useful in evaluating UI treatment outcomes. This 
+  package calculates scores for each dimension of the KHQ; converts KHQ item 
+  scores to KHQ5D scores; and also calculates the utility index of the KHQ5D.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: knitr, tidyverse, readxl, xlsx.
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
