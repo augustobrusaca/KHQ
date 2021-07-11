@@ -2,8 +2,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/augustobrusaca/KHQ/workflows/R-CMD-check/badge.svg)](https://github.com/augustobrusaca/KHQ/actions)
 [![R-CMD-check](https://github.com/augustobrusaca/KHQ/workflows/R-CMD-check/badge.svg)](https://github.com/augustobrusaca/KHQ/actions)
 <!-- badges: end -->
 
