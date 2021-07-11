@@ -132,7 +132,7 @@ KHQ5D <- function(
   # Load utility index scores
   Utility_Index_data <- KHQ::Utility_Index_data
   # Utility_Index_data <- readxl::read_xlsx(
-  #   path = system.file("data", "Score_Utility_Index.xlsx", package = "KHQ"), 
+  #   path = system.file("data-raw", "Score_Utility_Index.xlsx", package = "KHQ"), 
   #   sheet = "KHQ5D", .name_repair = "minimal") %>% 
   #   data.frame(check.names = FALSE)
   
