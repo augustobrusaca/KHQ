@@ -40,7 +40,7 @@ used to generate the weights of each item in the five dimensions.}
 \url{https://pubmed.ncbi.nlm.nih.gov/17641139/}
 }
 \usage{
-data(Utility_Index_data)
+Utility_Index_data
 }
 \description{
 This data set contains the weights to calculate the utility index of the KHQ5D.

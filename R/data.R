@@ -41,7 +41,32 @@
 #'   \item{9k}{Symptom Severity Scale}
 #' }
 #' 
-#' @usage data(KHQ_data_Kelleher)
+#' @usage KHQ_data_Kelleher
+#' 
+#' @examples 
+#' \dontrun{
+#' KHQScores(
+#'   scores = KHQ_data_Kelleher,
+#'   country = "UK",
+#'   author = "Kelleher",
+#'   year = 1997,
+#'   ignore.invalid = TRUE
+#' )
+#' 
+#' or
+#' 
+#' KHQScores(
+#'   scores = KHQ_data_Kelleher,
+#'   country = "UK",
+#'   author = "Kelleher",
+#'   year = 1997,
+#'   save.xlsx = TRUE,
+#'   filename = "Res_Scores_Dimensions_KHQ.xlsx",
+#'   sheetName = "Scores",
+#'   ignore.invalid = TRUE
+#' )
+#' }
+#' 
 #' @source Example data
 #' @references Kelleher CJ, Cardozo LD, Khullar V, Salvatore S. A new questionnaire
 #'   to assess the quality of life of urinary incontinent women. Br J Obstet Gynaecol. 
@@ -86,7 +111,36 @@
 #'   \enumerate{4. Your bladder problem affects your sleep a lot.}}
 #' }
 #'
-#' @usage data(KHQ5D_data)
+#' @usage KHQ5D_data
+#' 
+#' @examples 
+#' \dontrun{
+#' KHQ5D(
+#'   scores = KHQ5D_data,
+#'   country = "UK",
+#'   type = "SG",
+#'   author = "Brazier",
+#'   year = 2008,
+#'   source = "KHQ",
+#'   ignore.invalid = TRUE
+#' )
+#' 
+#' or
+#' 
+#' #' KHQ5D(
+#'   scores = KHQ5D_data,
+#'   country = "UK",
+#'   type = "SG",
+#'   author = "Brazier",
+#'   year = 2008,
+#'   source = "KHQ",
+#'   save.xlsx = TRUE,
+#'   filename = "Res_KHQ5D_uti_ind.xlsx",
+#'   sheetName = "Utility_Index",
+#'   ignore.invalid = TRUE
+#' )
+#' }
+#' 
 #' @source Example data
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
@@ -134,7 +188,7 @@
 #'   \enumerate{Health state - Number of health states used to generate the weights of the KHQ5D.}}
 #' }
 #' 
-#' @usage data(Utility_Index_data)
+#' @usage Utility_Index_data
 #' @source \url{https://pubmed.ncbi.nlm.nih.gov/17641139/}
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
@@ -143,3 +197,50 @@
 #'   \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 "Utility_Index_data"
 
+
+#' KHQ data to convert to KHQ5D scores
+#' @docType data
+#' 
+#' @keywords dataset
+#' 
+#' @description This data set contains an example of 30 responses of the KHQ 
+#'   items used to convert to KHQ5D scores.
+#'
+#' @format This data frame has 30 rows and the following 9 columns:
+#' \describe{
+#'   \item{3a}{Role Limitations}
+#'   \item{3b}{Role Limitations}
+#'   \item{4a}{Physical Limitations}
+#'   \item{4b}{Physical Limitations}
+#'   \item{4d}{Social Limitations}
+#'   \item{5c}{Personal Relationship}
+#'   \item{6a}{Emotions}
+#'   \item{6b}{Emotions}
+#'   \item{7a}{Sleep/Energy}
+#' }
+#' 
+#' @usage KHQ_Conv_KHQ5D_data
+#' @examples 
+#' \dontrun{
+#' KHQConvKHQ5D(
+#'   scores = KHQ_Conv_KHQ5D_data,
+#'   ignore.invalid = TRUE
+#' )
+#' 
+#' or
+#' 
+#' KHQConvKHQ5D(
+#'   scores = KHQ_Conv_KHQ5D_data,
+#'   save.xlsx = TRUE,
+#'   filename = "KHQ_conv_KHQ5D.xlsx",
+#'   sheetName = "Scores",
+#'   ignore.invalid = TRUE
+#' )
+#' }
+#' @source Example data
+#' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
+#'   Estimation of a preference-based index from a condition-specific measure: 
+#'   the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26. 
+#'   doi: 10.1177/0272989X07301820.
+#'   \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
+"KHQ_Conv_KHQ5D_data"

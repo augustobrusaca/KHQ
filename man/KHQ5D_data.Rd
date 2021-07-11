@@ -38,10 +38,39 @@ This data frame has 30 rows and the following 5 columns:
 Example data
 }
 \usage{
-data(KHQ5D_data)
+KHQ5D_data
 }
 \description{
 This data set contains an example of 30 responses of the KHQ5D.
+}
+\examples{
+\dontrun{
+KHQ5D(
+  scores = KHQ5D_data,
+  country = "UK",
+  type = "SG",
+  author = "Brazier",
+  year = 2008,
+  source = "KHQ",
+  ignore.invalid = TRUE
+)
+
+or
+
+#' KHQ5D(
+  scores = KHQ5D_data,
+  country = "UK",
+  type = "SG",
+  author = "Brazier",
+  year = 2008,
+  source = "KHQ",
+  save.xlsx = TRUE,
+  filename = "Res_KHQ5D_uti_ind.xlsx",
+  sheetName = "Utility_Index",
+  ignore.invalid = TRUE
+)
+}
+
 }
 \references{
 Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C.

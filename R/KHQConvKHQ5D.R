@@ -37,14 +37,14 @@
 #' @examples 
 #' \dontrun{
 #' KHQConvKHQ5D(
-#'   scores = KHQ_data,
+#'   scores = KHQ_Conv_KHQ5D_data,
 #'   ignore.invalid = TRUE
 #' )
 #' 
 #' or
 #' 
 #' KHQConvKHQ5D(
-#'   scores = KHQ_data,
+#'   scores = KHQ_Conv_KHQ5D_data,
 #'   save.xlsx = TRUE,
 #'   filename = "KHQ_conv_KHQ5D.xlsx",
 #'   sheetName = "Scores",

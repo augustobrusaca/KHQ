@@ -52,7 +52,6 @@
 #' @rdname KHQ5D
 #' @export 
 #' @importFrom magrittr %>%
-#' @importFrom readxl read_xlsx
 #' @importFrom stats na.omit
 #' @importFrom xlsx write.xlsx
 

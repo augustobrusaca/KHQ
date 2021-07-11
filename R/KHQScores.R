@@ -52,7 +52,7 @@
 #' @examples 
 #' \dontrun{
 #' KHQScores(
-#'   scores = KHQ_data,
+#'   scores = KHQ_data_Kelleher,
 #'   country = "UK",
 #'   author = "Kelleher",
 #'   year = 1997,
@@ -62,7 +62,7 @@
 #' or
 #' 
 #' KHQScores(
-#'   scores = KHQ_data,
+#'   scores = KHQ_data_Kelleher,
 #'   country = "UK",
 #'   author = "Kelleher",
 #'   year = 1997,

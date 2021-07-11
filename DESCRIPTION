@@ -1,5 +1,5 @@
 Package: KHQ
-Title: Methods for Analysing 'KHQ' Data and Calculating 'KHQ5D' Index Scores
+Title: Methods for Calculating 'KHQ' Scores and 'KHQ5D' Utility Index Scores
 Version: 0.0.0.9
 Authors@R: 
     person(given = "Luiz Augusto",
@@ -23,7 +23,6 @@ Suggests:
 Imports:
     magrittr,
     knitr,
-    readxl,
     stats,
     xlsx
 Depends: R (>= 4.1.0)

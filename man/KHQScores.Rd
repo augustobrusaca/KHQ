@@ -53,7 +53,7 @@ the questionnaire published by Brusaca and collaborator in 2021 (1, 2, 3a, 3b,
 \examples{
 \dontrun{
 KHQScores(
-  scores = KHQ_data,
+  scores = KHQ_data_Kelleher,
   country = "UK",
   author = "Kelleher",
   year = 1997,
@@ -63,7 +63,7 @@ KHQScores(
 or
 
 KHQScores(
-  scores = KHQ_data,
+  scores = KHQ_data_Kelleher,
   country = "UK",
   author = "Kelleher",
   year = 1997,

@@ -45,10 +45,35 @@ This data frame has 30 rows and the following 32 columns:
 Example data
 }
 \usage{
-data(KHQ_data_Kelleher)
+KHQ_data_Kelleher
 }
 \description{
 This data set contains an example of 30 responses of the KHQ.
+}
+\examples{
+\dontrun{
+KHQScores(
+  scores = KHQ_data_Kelleher,
+  country = "UK",
+  author = "Kelleher",
+  year = 1997,
+  ignore.invalid = TRUE
+)
+
+or
+
+KHQScores(
+  scores = KHQ_data_Kelleher,
+  country = "UK",
+  author = "Kelleher",
+  year = 1997,
+  save.xlsx = TRUE,
+  filename = "Res_Scores_Dimensions_KHQ.xlsx",
+  sheetName = "Scores",
+  ignore.invalid = TRUE
+)
+}
+
 }
 \references{
 Kelleher CJ, Cardozo LD, Khullar V, Salvatore S. A new questionnaire
