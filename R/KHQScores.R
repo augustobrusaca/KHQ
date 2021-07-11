@@ -27,7 +27,7 @@
 
 
 #' @title KHQScores
-#' @description function used to generate scores for each dimension of the KHQ.
+#' @description Function used to generate scores for each dimension of the KHQ.
 #' @param scores PARAM_DESCRIPTION
 #' @param country PARAM_DESCRIPTION
 #' @param author PARAM_DESCRIPTION
@@ -37,11 +37,12 @@
 #' @param sheetName PARAM_DESCRIPTION, Default: NULL
 #' @param ignore.invalid logical to indicate whether to ignore items data 
 #'   with invalid, incomplete or missing data, Default: FALSE
-#' @return a data frame with scores of each dimension of the KHQ.
+#' @return A data frame with scores of each dimension of the KHQ.
 #' @details If using the original structure the items must be named equal the 
 #'   number in the original questionnaire published by Kelleher and collaborator 
 #'   in 1997 (1, 2, 3a, 3b, 4a, 4b, 4c, 4d, 5a, 5b, 5c, 6a, 6b, 6c, 7a, 7b, 8a,  
 #'   8b, 8c, 8d, 8e, 9a, 9b, 9c, 9d, 9e, 9f, 9g, 9h, 9i, 9j, 9k).
+#'   
 #'   If using the Brazilian structure the items must be named equal the number in 
 #'   the questionnaire published by Brusaca and collaborator in 2021 (1, 2, 3a, 3b,
 #'   3c, 3d, 3e, 4a, 4b, 4c, 5a, 5b, 5c, 6a, 6b, 7a, 7b, 7c, 8a, 8b, 8c, 8d, 8e, 
@@ -73,9 +74,10 @@
 #' }
 #' 
 #' @seealso 
-#'  \code{\link[xlsx]{write.xlsx}}
+#'  \code{\link[KHQ]{KHQConvKHQ5D}}
 #' @rdname KHQScores
 #' @export 
+#' @importFrom magrittr %>%
 #' @importFrom xlsx write.xlsx
 
 

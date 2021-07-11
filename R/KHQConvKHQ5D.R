@@ -21,14 +21,14 @@
 
 
 #' @title KHQConvKHQ5D
-#' @description function used to convert the KHQ item scores to KHQ5D scores.
+#' @description Function used to convert the KHQ item scores to KHQ5D scores.
 #' @param scores PARAM_DESCRIPTION
 #' @param save.xlsx PARAM_DESCRIPTION, Default: FALSE
 #' @param filename PARAM_DESCRIPTION, Default: NULL
 #' @param sheetName PARAM_DESCRIPTION, Default: NULL
 #' @param ignore.invalid logical to indicate whether to ignore items data 
 #'   with invalid, incomplete or missing data, Default: FALSE
-#' @return a data frame with scores of the KHQ five dimensions (KHQ5D).
+#' @return A data frame with scores of the KHQ five dimensions (KHQ5D).
 #' @details Nine items of the KHQ are used to calculate the KHQ5D scores. The 
 #'   items must be named equal the number in the original questionnaire (3a, 3b, 
 #'   4a, 4b, 4d, 5c, 6a, 6b, 7a).
@@ -52,9 +52,10 @@
 #' )
 #' }
 #' @seealso 
-#'  \code{\link[xlsx]{write.xlsx}}
+#'  \code{\link[KHQ]{KHQ5D}}
 #' @rdname KHQConvKHQ5D
 #' @export 
+#' @importFrom magrittr %>%
 #' @importFrom xlsx write.xlsx
 
 

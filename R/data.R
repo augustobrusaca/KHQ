@@ -1,5 +1,8 @@
 #' KHQ data
-#'
+#' @docType data
+#' 
+#' @keywords dataset
+#' 
 #' @description This data set contains an example of 30 responses of the KHQ.
 #'
 #' @format This data frame has 30 rows and the following 32 columns:
@@ -38,7 +41,8 @@
 #'   \item{9k}{Symptom Severity Scale}
 #' }
 #' 
-#' @source \url{https://pubmed.ncbi.nlm.nih.gov/9422015/}
+#' @usage data(KHQ_data_Kelleher)
+#' @source Example data
 #' @references Kelleher CJ, Cardozo LD, Khullar V, Salvatore S. A new questionnaire
 #'   to assess the quality of life of urinary incontinent women. Br J Obstet Gynaecol. 
 #'   1997 Dec;104(12):1374-9. doi: 10.1111/j.1471-0528.1997.tb11006.x. 
@@ -47,39 +51,43 @@
 
 
 #' KHQ five dimension data
-#'
+#' @docType data
+#' 
+#' @keywords dataset
+#' 
 #' @description This data set contains an example of 30 responses of the KHQ5D.
 #'
 #' @format This data frame has 30 rows and the following 5 columns:
 #' \describe{
 #'   \item{RL}{Role Limitations:
-#'   1. Your bladder problem does not affect your household tasks, job, or normal daily activities outside the home;
-#'   2. Your bladder problem slightly affects your household tasks, job, or normal daily activities outside the home;
-#'   3. Your bladder problem moderately affects your household tasks, job, or normal daily activities outside the home;
-#'   4. Your bladder problem affects your household tasks, job, or normal daily activities outside the home a lot.}
+#'   \enumerate{1. Your bladder problem does not affect your household tasks, job, or normal daily activities outside the home;}
+#'   \enumerate{2. Your bladder problem slightly affects your household tasks, job, or normal daily activities outside the home;}
+#'   \enumerate{3. Your bladder problem moderately affects your household tasks, job, or normal daily activities outside the home;}
+#'   \enumerate{4. Your bladder problem affects your household tasks, job, or normal daily activities outside the home a lot.}}
 #'   \item{PL}{Physical Limitations:
-#'   1. Your bladder problem does not affect your physical activities or ability to travel;
-#'   2. Your bladder problem slightly affects your physical activities or ability to travel;
-#'   3. Your bladder problem moderately affects your physical activities or ability to travel;
-#'   4. Your bladder problem affects your physical activities or ability to travel a lot.}
+#'   \enumerate{1. Your bladder problem does not affect your physical activities or ability to travel;}
+#'   \enumerate{2. Your bladder problem slightly affects your physical activities or ability to travel;}
+#'   \enumerate{3. Your bladder problem moderately affects your physical activities or ability to travel;}
+#'   \enumerate{4. Your bladder problem affects your physical activities or ability to travel a lot.}}
 #'   \item{SL}{Social Limitations:
-#'   1. Your bladder problem does not limit your ability to see/visit friends or affect your family life;
-#'   2. Your bladder problem slightly limits your ability to see/visit friends or affects your family life;
-#'   3. Your bladder problem moderately limits your ability to see/visit friends or affects your family life;
-#'   4. Your bladder problem limits your ability to see/visit friends or affects your family life a lot.}
+#'   \enumerate{1. Your bladder problem does not limit your ability to see/visit friends or affect your family life;}
+#'   \enumerate{2. Your bladder problem slightly limits your ability to see/visit friends or affects your family life;}
+#'   \enumerate{3. Your bladder problem moderately limits your ability to see/visit friends or affects your family life;}
+#'   \enumerate{4. Your bladder problem limits your ability to see/visit friends or affects your family life a lot.}}
 #'   \item{E}{Emotions:
-#'   1. Your bladder problem does not make you feel depressed or anxious and nervous;
-#'   2. Your bladder problem makes you feel slightly depressed or anxious and nervous;
-#'   3. Your bladder problem makes you feel moderately depressed or anxious and nervous;
-#'   4. Your bladder problem makes you feel depressed or anxious and nervous a lot.}
+#'   \enumerate{1. Your bladder problem does not make you feel depressed or anxious and nervous;}
+#'   \enumerate{2. Your bladder problem makes you feel slightly depressed or anxious and nervous;}
+#'   \enumerate{3. Your bladder problem makes you feel moderately depressed or anxious and nervous;}
+#'   \enumerate{4. Your bladder problem makes you feel depressed or anxious and nervous a lot.}}
 #'   \item{S}{Sleep:
-#'   1. Your bladder problem does not affect your sleep;
-#'   2. Your bladder problem slightly affects your sleep;
-#'   3. Your bladder problem moderately affects your sleep;
-#'   4. Your bladder problem affects your sleep a lot.}
+#'   \enumerate{1. Your bladder problem does not affect your sleep;}
+#'   \enumerate{2. Your bladder problem slightly affects your sleep;}
+#'   \enumerate{3. Your bladder problem moderately affects your sleep;}
+#'   \enumerate{4. Your bladder problem affects your sleep a lot.}}
 #' }
 #'
-#' @source \url{https://pubmed.ncbi.nlm.nih.gov/17641139/}
+#' @usage data(KHQ5D_data)
+#' @source Example data
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
 #'   the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26. 
@@ -89,39 +97,44 @@
 
 
 #' Utility Index weights of the KHQ5D
-#'
+#' @docType data
+#' 
+#' @keywords dataset
+#' 
 #' @description This data set contains the weights to calculate the utility index of the KHQ5D.
 #'
 #' @format This data frame has 30 rows and the following 5 columns:
 #' \describe{
-#'   \item{Variables}{Countries that have weights of KHQ5D.}
-#'   \item{FullHealth}{Best health, usually indicated as 1.}
-#'   \item{RL2}{Role Limitations: weight for score 2.}
-#'   \item{RL3}{Role Limitations: weight for score 3.}
-#'   \item{RL4}{Role Limitations: weight for score 4.}
-#'   \item{PL2}{Physical Limitations: weight for score 2.}
-#'   \item{PL3}{Physical Limitations: weight for score 3.}
-#'   \item{PL4}{Physical Limitations: weight for score 4.}
-#'   \item{SL2}{Social Limitations: weight for score 2.}
-#'   \item{SL3}{Social Limitations: weight for score 3.}
-#'   \item{SL4}{Social Limitations: weight for score 4.}
-#'   \item{E2}{Emotions: weight for score 2.}
-#'   \item{E3}{Emotions: weight for score 3.}
-#'   \item{E4}{Emotions: weight for score 4.}
-#'   \item{S2}{Sleep: weight for score 2.}
-#'   \item{S3}{Sleep: weight for score 3.}
-#'   \item{S4}{Sleep: weight for score 4.}
-#'   \item{Year}{Year in which the weight of each item in the five dimensions of 
+#'   \item{UK}{UK KHQ5D weights. \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}}
+#'   \item{Variables}{Countries that have weights of KHQ5D:
+#'   \enumerate{FullHealth - Best health, usually indicated as 1.}
+#'   \enumerate{RL2 - Role Limitations: weight for score 2.}
+#'   \enumerate{RL3 - Role Limitations: weight for score 3.}
+#'   \enumerate{RL4 - Role Limitations: weight for score 4.}
+#'   \enumerate{PL2 - Physical Limitations: weight for score 2.}
+#'   \enumerate{PL3 - Physical Limitations: weight for score 3.}
+#'   \enumerate{PL4 - Physical Limitations: weight for score 4.}
+#'   \enumerate{SL2 - Social Limitations: weight for score 2.}
+#'   \enumerate{SL3 - Social Limitations: weight for score 3.}
+#'   \enumerate{SL4 - Social Limitations: weight for score 4.}
+#'   \enumerate{E2 - Emotions: weight for score 2.}
+#'   \enumerate{E3 - Emotions: weight for score 3.}
+#'   \enumerate{E4 - Emotions: weight for score 4.}
+#'   \enumerate{S2 - Sleep: weight for score 2.}
+#'   \enumerate{S3 - Sleep: weight for score 3.}
+#'   \enumerate{S4 - Sleep: weight for score 4.}
+#'   \enumerate{Year - Year in which the weight of each item in the five dimensions of 
 #'   the KHQ5D was generated.}
-#'   \item{Author}{Author who published the weight of each item in the five 
+#'   \enumerate{Author - Author who published the weight of each item in the five 
 #'   dimensions of the KHQ5D.}
-#'   \item{Type}{Type of method used to generate the weight of each item from 
+#'   \enumerate{Type - Type of method used to generate the weight of each item from 
 #'   the five dimensions of KHQ5D.}
-#'   \item{Source}{Version of KHQ used to build the KHQ5D items and consequently 
+#'   \enumerate{Source - Version of KHQ used to build the KHQ5D items and consequently 
 #'   used to generate the weights of each item in the five dimensions.}
-#'   \item{Health state}{Number of health states used to generate the weights of the KHQ5D.}
+#'   \enumerate{Health state - Number of health states used to generate the weights of the KHQ5D.}}
 #' }
-#'
+#' 
+#' @usage data(Utility_Index_data)
 #' @source \url{https://pubmed.ncbi.nlm.nih.gov/17641139/}
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
