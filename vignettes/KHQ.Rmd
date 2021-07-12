@@ -1,22 +1,21 @@
 ---
-output: github_document
+title: "Calculating KHQ scores, converting KHQ items to KHQ5D scores, and calculating utility index scores of the KHQ5D"
+author: "Luiz Augusto Brusaca, email: augustobrusaca@gmail.com"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Calculating KHQ scores, converting KHQ items to KHQ5D scores, and calculating utility index scores of the KHQ5D}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+  comment = "#>"
 )
 ```
 
-
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/augustobrusaca/KHQ/workflows/R-CMD-check/badge.svg)](https://github.com/augustobrusaca/KHQ/actions)
-<!-- badges: end -->
 
 # KHQ
 
@@ -341,11 +340,7 @@ Example: ?KHQScores
 Please report [issues](https://github.com/augustobrusaca/KHQ/issues) with [KHQ package](https://github.com/augustobrusaca/KHQ) in their directory on GitHub or send an email to augustobrusaca@gmail.com. I will be happy to resolve the issue & bug of the package as soon as possible. Always remember to post/send a reproducible piece of your code that is generating the issue & bug. 
 
 
-## Future functions
-
-More coming soon. New ideas are welcome.
-
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/augustobrusaca/KHQ/blob/master/LICENSE.md) file for details.
+

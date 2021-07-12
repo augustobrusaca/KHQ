@@ -388,9 +388,116 @@ head(df_uti_index)
 #> 6        0.918
 ```
 
+## Error alerts
+
+All functions check if the data is correct to be used, if there is any
+error an error alert will be displayed.
+
+Items checked when running the function:
+
+-   KHQScores
+    -   Checking number of items;
+    -   Checking the name of the items;
+    -   Checking for NAs in the data;
+    -   Checking coded scores.
+-   KHQConvKHQ5D
+    -   Checking the class of the data;
+    -   Checking number of items;
+    -   Checking the name of the items;
+    -   Checking coded scores;
+    -   Checking for NAs in the data.
+-   KHQ5D
+    -   Checking dimension names;
+    -   Checking the five-digit data format;
+    -   Checking for NAs in the data;
+    -   Checking coded scores;
+    -   Checking the country in which the weighted score was calculated;
+    -   Checking other information of the data used, such as: Year,
+        Author, Type, and Source.
+
+Be aware that the evaluation of possible errors is done step-by-step in
+the sequence given above. So if the data has more than one error it must
+be corrected multiple times.
+
+``` r
+# Example
+# Checking number of items
+scores_UK_1 <- cbind(scores_UK, item = scores_UK[,1])
+
+KHQScores(scores = scores_UK_1, country = "UK", author = "Kelleher", year = 1997, ignore.invalid = TRUE)
+#>  [1] "1"    "2"    "3a"   "3b"   "4a"   "4b"   "4c"   "4d"   "5a"   "5b"  
+#> [11] "5c"   "6a"   "6b"   "6c"   "7a"   "7b"   "8a"   "8b"   "8c"   "8d"  
+#> [21] "8e"   "9a"   "9b"   "9c"   "9d"   "9e"   "9f"   "9g"   "9h"   "9i"  
+#> [31] "9j"   "9k"   "item"
+#> Error in KHQScores(scores = scores_UK_1, country = "UK", author = "Kelleher", : The number of items is different from what is needed to calculate KHQ domain scores. 
+#>       
+#>  Number of items must be 32:
+#>       
+#>  General Health Perception  - 1;
+#>       
+#>  Incontinence Impact        - 2;
+#>       
+#>  Role Limitations           - 3a and 3b;
+#>       
+#>  Physical limitations       - 4a and 4b;
+#>       
+#>  Social limitations         - 4c and 4d;
+#>       
+#>  Personal Relationships     - 5a, 5b and 5c;
+#>       
+#>  Emotions                   - 6a, 6b and 6c;
+#>       
+#>  Sleep/Energy               - 7a and 7b;
+#>       
+#>  Severity Measures          - 8a, 8b, 8c, 8d and 8e;
+#>       
+#>  Symptom Severity Scale     - 9a, 9b, 9c, 9d, 9e, 9f, 9g, 9h, 9i, 9j and 9k.
+
+
+# Checking coded scores
+scores <- data.frame(
+  "3a" = c(4,3,4,3,2), 
+  "3b" = c(4,3,4,5,2), 
+  "4a" = c(1,3,4,3,4), 
+  "4b" = c(1,3,4,3,4), 
+  "4d" = c(2,2,3,4,2),
+  "5c" = c(2,2,3,4,2), 
+  "6a" = c(3,2,2,4,1), 
+  "6b" = c(3,2,2,4,1), 
+  "7a" = c(1,3,4,3,4),
+  check.names = FALSE
+)
+
+KHQConvKHQ5D(scores = scores, ignore.invalid = FALSE)
+#>   3a 3b 4a 4b 4d 5c 6a 6b 7a
+#> 4  3  5  3  3  4  4  4  4  3
+#> Error in KHQConvKHQ5D(scores = scores, ignore.invalid = FALSE): Scores must be coded as 1, 2, 3 or 4 for these items of the KHQ.
+
+# The error shows which row in the data has a score outside the allowable limit.
+```
+
 ## Information
 
 Consult the documentation for each function and example data within the
 package using ?\[name\] of the function or example data.
 
 Example: ?KHQScores
+
+## Issues & Bugs
+
+Please report [issues](https://github.com/augustobrusaca/KHQ/issues)
+with [KHQ package](https://github.com/augustobrusaca/KHQ) in their
+directory on GitHub or send an email to <augustobrusaca@gmail.com>. I
+will be happy to resolve the issue & bug of the package as soon as
+possible. Always remember to post/send a reproducible piece of your code
+that is generating the issue & bug.
+
+## Future functions
+
+More coming soon. New ideas are welcome.
+
+## License
+
+This project is licensed under the MIT License - see the
+[LICENSE.md](https://github.com/augustobrusaca/KHQ/blob/master/LICENSE.md)
+file for details.
