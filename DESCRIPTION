@@ -21,6 +21,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests:
     markdown,
+    rmarkdown,
     testthat (>= 3.0.0)
 Imports:
     magrittr,
