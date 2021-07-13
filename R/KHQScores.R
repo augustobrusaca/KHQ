@@ -99,6 +99,19 @@ KHQScores <- function(
   }
   
   
+  # Checking information
+  df_info <- data.frame(country = c("UK","BR"), 
+                        author = c("Kelleher", "Brusaca"), 
+                        year = c(1997, 2021))
+  
+  if (all(c(!all(df_info[1,] %in% c(country, author, year)), 
+            !all(df_info[2,] %in% c(country, author, year))))) {
+    print(df_info)
+    stop("Information set type not recognized. Country, author, and year must be one of the two lines above.")
+    
+  }
+  
+  
   # Checking number of items
   if (author == "Kelleher" & length(names(scores)) != 32) {
     print(names(scores))

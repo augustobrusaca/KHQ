@@ -396,6 +396,9 @@ error an error alert will be displayed.
 Items checked when running the function:
 
 -   KHQScores
+    -   Checking the class of the data, it should be ‘class’ data.frame;
+    -   Checking information to calculate the scores, such as: country,
+        author, and year;
     -   Checking number of items;
     -   Checking the name of the items;
     -   Checking for NAs in the data;
