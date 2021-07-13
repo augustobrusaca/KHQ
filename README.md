@@ -57,7 +57,7 @@ Of note - the package is not yet released on CRAN, download directly
 from GitHub, option below.
 
 ``` r
-install.packages("KHQ")
+# install.packages("KHQ")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
