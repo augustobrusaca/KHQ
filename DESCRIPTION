@@ -24,12 +24,12 @@ Suggests:
     markdown,
     remotes,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat
 Imports:
     magrittr,
     openxlsx,
     stats
-Depends: R (>= 4.1.0)
+Depends: R (>= 3.5.0)
 URL: https://github.com/augustobrusaca/KHQ
 BugReports: https://github.com/augustobrusaca/KHQ/issues
 VignetteBuilder: knitr
