@@ -4,7 +4,7 @@
 \name{KHQ-package}
 \alias{KHQ}
 \alias{KHQ-package}
-\title{KHQ: Methods for Calculating 'KHQ' Scores and 'KHQ5D' Utility Index Scores}
+\title{KHQ: Methods for Calculating King's Health Questionnaire (KHQ) Scores and KHQ five dimentions (KHQ5D) Utility Index Scores}
 \description{
 The KHQ is a disease-specific, self-administered questionnaire 
   designed specific to assess the impact of Urinary incontinence (UI) on QoL. 
