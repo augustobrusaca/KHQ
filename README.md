@@ -53,6 +53,9 @@ evaluation of health care as well as in population health surveys.
 You can install the released version of KHQ from
 [CRAN](https://CRAN.R-project.org) with:
 
+Of note - the package is not yet released on CRAN, download directly
+from GitHub, option below.
+
 ``` r
 install.packages("KHQ")
 ```
@@ -60,7 +63,8 @@ install.packages("KHQ")
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+install.packages("devtools")
+
 devtools::install_github("augustobrusaca/KHQ")
 ```
 
