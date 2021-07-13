@@ -78,7 +78,7 @@
 #' @rdname KHQScores
 #' @export 
 #' @importFrom magrittr %>%
-#' @importFrom xlsx write.xlsx
+#' @importFrom openxlsx write.xlsx
 
 
 KHQScores <- function(
@@ -490,10 +490,11 @@ KHQScores <- function(
   
   # Saving results to an Excel file
   if (save.xlsx == TRUE & is.null(filename) & is.null(sheetName)) {
-    xlsx::write.xlsx(dfScores, file = "Res_Scores_Dimensions_KHQ.xlsx", sheetName = "Scores", row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(dfScores, file = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores", keepNA = FALSE, na.string = "NA", overwrite = TRUE)
     
   } else if (save.xlsx == TRUE) {
-    xlsx::write.xlsx(dfScores, file = filename, sheetName = sheetName, row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(dfScores, file = filename, sheetName = sheetName, keepNA = FALSE, na.string = "NA", overwrite = TRUE)
+    
   }
   
   return(dfScores)

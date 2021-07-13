@@ -52,8 +52,8 @@
 #' @rdname KHQ5D
 #' @export 
 #' @importFrom magrittr %>%
+#' @importFrom openxlsx write.xlsx
 #' @importFrom stats na.omit
-#' @importFrom xlsx write.xlsx
 
 
 KHQ5D <- function(
@@ -206,10 +206,11 @@ KHQ5D <- function(
   
   # Saving results to an Excel file
   if (save.xlsx == TRUE & is.null(filename) & is.null(sheetName)) {
-    xlsx::write.xlsx(df_Uti_Ind, file = "Res_KHQ5D_uti_ind.xlsx", sheetName = "Utility_Index", row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(df_Uti_Ind, file = "Res_KHQ5D_uti_ind.xlsx", sheetName = "Utility_Index", keepNA = FALSE, na.string = "NA", overwrite = TRUE)
     
   } else if (save.xlsx == TRUE) {
-    xlsx::write.xlsx(df_Uti_Ind, file = filename, sheetName = sheetName, row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(df_Uti_Ind, file = filename, sheetName = sheetName, keepNA = FALSE, na.string = "NA", overwrite = TRUE)
+    
   }
   
   return(df_Uti_Ind)

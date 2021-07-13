@@ -1,19 +1,5 @@
 
-
-# library(here)
-# library(readxl)
-
-
 ## Test 1
-# Load data
-# data_test_1 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","data_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "data_1", .name_repair = "minimal"), check.names = FALSE)
-# 
-# res_test_1 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","res_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "test_1", .name_repair = "minimal"), check.names = FALSE)
-
 data_test_1 <- data.frame(
   "3a" = c(4,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -49,11 +35,6 @@ test_that("KHQConvKHQ5D throws error for incorrect class of the data", {
 
 
 # Test 3
-# Load data
-# data_test_2 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","data_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "data_2", .name_repair = "minimal"), check.names = FALSE)
-
 data_test_2 <- data.frame(
   "3a" = c(4,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -73,11 +54,6 @@ test_that("KHQConvKHQ5D throws error for incorrect number of items", {
 
 
 # Test 4
-# Load data
-# data_test_3 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","data_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "data_3", .name_repair = "minimal"), check.names = FALSE)
-
 data_test_3 <- data.frame(
   "1" = c(4,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -98,11 +74,6 @@ test_that("KHQConvKHQ5D throws error for incorrect name of the items", {
 
 
 # Test 5
-# Load data
-# data_test_4 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","data_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "data_4", .name_repair = "minimal"), check.names = FALSE)
-
 data_test_4 <- data.frame(
   "3a" = c(5,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -123,11 +94,6 @@ test_that("KHQConvKHQ5D throws error for incorrect coded scores", {
 
 
 # Test 6
-# Load data
-# data_test_5 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","data_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "data_5", .name_repair = "minimal"), check.names = FALSE)
-
 data_test_5 <- data.frame(
   "3a" = c(4,NA,4,3,2), 
   "3b" = c(4,NA,4,3,2), 
@@ -146,10 +112,6 @@ test_that("KHQConvKHQ5D throws error for NAs in the data", {
   
 })
 
-
-# res_test_2 <- data.frame(
-#   readxl::read_xlsx(here::here("tests/testdata","res_test_KHQConvKHQ5D.xlsx"), 
-#                     sheet = "test_2", .name_repair = "minimal"), check.names = FALSE)
 
 res_test_2 <- data.frame(
   RL = c(4,NA,4,3,2),

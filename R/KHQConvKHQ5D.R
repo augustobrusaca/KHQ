@@ -56,7 +56,7 @@
 #' @rdname KHQConvKHQ5D
 #' @export 
 #' @importFrom magrittr %>%
-#' @importFrom xlsx write.xlsx
+#' @importFrom openxlsx write.xlsx
 
 
 KHQConvKHQ5D <- function(
@@ -161,10 +161,11 @@ KHQConvKHQ5D <- function(
   
   # Saving results to an Excel file
   if (save.xlsx == TRUE & is.null(filename) & is.null(sheetName)) {
-    xlsx::write.xlsx(conv_score, file = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores", row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(conv_score, file = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores", keepNA = FALSE, na.string = "NA", overwrite = TRUE)
     
   } else if (save.xlsx == TRUE) {
-    xlsx::write.xlsx(conv_score, file = filename, sheetName = sheetName, row.names = FALSE, showNA = FALSE)
+    openxlsx::write.xlsx(conv_score, file = filename, sheetName = sheetName, keepNA = FALSE, na.string = "NA", overwrite = TRUE)
+    
   }
   
   return(conv_score)
