@@ -20,12 +20,15 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests:
+    knitr,
     markdown,
+    remotes,
+    rJava,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    xlsxjars
 Imports:
     magrittr,
-    knitr,
     stats,
     xlsx
 Depends: R (>= 4.1.0)
