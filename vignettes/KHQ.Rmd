@@ -301,7 +301,7 @@ Items checked when running the function:
 Be aware that the evaluation of possible errors is done step-by-step in the sequence given above. So if the data has more than one error it must be corrected multiple times.
 
 
-```{r alerts, error = TRUE}
+```{r alerts, error = TRUE, purl = FALSE}
 # Example
 # Checking number of items
 scores_UK_1 <- cbind(scores_UK, item = scores_UK[,1])
