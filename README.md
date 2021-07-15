@@ -3,6 +3,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/augustobrusaca/KHQ/workflows/R-CMD-check/badge.svg)](https://github.com/augustobrusaca/KHQ/actions)
+[![Travis-CI Build
+Status](https://travis-ci.org/augustobrusaca/KHQ.svg?branch=master)](https://travis-ci.org/augustobrusaca/KHQ)
 <!-- badges: end -->
 
 # KHQ
