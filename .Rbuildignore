@@ -1,9 +1,7 @@
 ^data-raw$
 ^.*\.Rproj$
-^\.Rproj\.user$
 ^\.github$
 ^\.travis\.yml$
 ^README\.Rmd$
 ^LICENSE\.md$
-^doc$
-^Meta$
+^\.Rproj\.user$

@@ -8,32 +8,31 @@
 This data frame has 30 rows and the following 5 columns:
 \describe{
 \item{UK}{UK KHQ5D weights. \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}}
-\item{Variables}{Countries that have weights of KHQ5D:
-\enumerate{FullHealth - Best health, usually indicated as 1.}
-\enumerate{RL2 - Role Limitations: weight for score 2.}
-\enumerate{RL3 - Role Limitations: weight for score 3.}
-\enumerate{RL4 - Role Limitations: weight for score 4.}
-\enumerate{PL2 - Physical Limitations: weight for score 2.}
-\enumerate{PL3 - Physical Limitations: weight for score 3.}
-\enumerate{PL4 - Physical Limitations: weight for score 4.}
-\enumerate{SL2 - Social Limitations: weight for score 2.}
-\enumerate{SL3 - Social Limitations: weight for score 3.}
-\enumerate{SL4 - Social Limitations: weight for score 4.}
-\enumerate{E2 - Emotions: weight for score 2.}
-\enumerate{E3 - Emotions: weight for score 3.}
-\enumerate{E4 - Emotions: weight for score 4.}
-\enumerate{S2 - Sleep: weight for score 2.}
-\enumerate{S3 - Sleep: weight for score 3.}
-\enumerate{S4 - Sleep: weight for score 4.}
-\enumerate{Year - Year in which the weight of each item in the five dimensions of
-the KHQ5D was generated.}
-\enumerate{Author - Author who published the weight of each item in the five
-dimensions of the KHQ5D.}
-\enumerate{Type - Type of method used to generate the weight of each item from
-the five dimensions of KHQ5D.}
-\enumerate{Source - Version of KHQ used to build the KHQ5D items and consequently
-used to generate the weights of each item in the five dimensions.}
-\enumerate{Health state - Number of health states used to generate the weights of the KHQ5D.}}
+\item{Variables}{FullHealth - Best health, usually indicated as 1;
+RL2 - Role Limitations: weight for score 2;
+RL3 - Role Limitations: weight for score 3;
+RL4 - Role Limitations: weight for score 4;
+PL2 - Physical Limitations: weight for score 2;
+PL3 - Physical Limitations: weight for score 3;
+PL4 - Physical Limitations: weight for score 4;
+SL2 - Social Limitations: weight for score 2;
+SL3 - Social Limitations: weight for score 3;
+SL4 - Social Limitations: weight for score 4;
+E2 - Emotions: weight for score 2;
+E3 - Emotions: weight for score 3;
+E4 - Emotions: weight for score 4;
+S2 - Sleep: weight for score 2;
+S3 - Sleep: weight for score 3;
+S4 - Sleep: weight for score 4;
+Year - Year in which the weight of each item in the five dimensions of
+the KHQ5D was generated;
+Author - Author who published the weight of each item in the five
+dimensions of the KHQ5D;
+Type - Type of method used to generate the weight of each item from
+the five dimensions of KHQ5D;
+Source - Version of KHQ used to build the KHQ5D items and consequently
+used to generate the weights of each item in the five dimensions;
+Health state - Number of health states used to generate the weights of the KHQ5D.}
 }
 }
 \source{

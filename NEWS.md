@@ -1,7 +1,6 @@
 
-# KHQ 0.0.0.9 (2021-07-11)
+# KHQ 0.1.0 (2021-07-15)
 
-* KHQ5D value set for UK
 
 * KHQScores function used to generate scores for each dimension of the KHQ
 
@@ -9,3 +8,5 @@
 
 * KHQ5D function used to convert the scores of the five dimensions of the KHQ5D 
 to a single utility index using country specific value set.
+
+* KHQ5D value set for UK

@@ -3,15 +3,15 @@
 #' @title KHQ5D
 #' @description Function used to convert the scores of the five dimensions of 
 #'   the KHQ5D to a single utility index using country specific value set.
-#' @param scores PARAM_DESCRIPTION
-#' @param country PARAM_DESCRIPTION
-#' @param type PARAM_DESCRIPTION
-#' @param author PARAM_DESCRIPTION
-#' @param year PARAM_DESCRIPTION
-#' @param source PARAM_DESCRIPTION
-#' @param save.xlsx PARAM_DESCRIPTION, Default: FALSE
-#' @param filename PARAM_DESCRIPTION, Default: NULL
-#' @param sheetName PARAM_DESCRIPTION, Default: NULL
+#' @param scores PARAM DESCRIPTION
+#' @param country PARAM DESCRIPTION
+#' @param type PARAM DESCRIPTION
+#' @param author PARAM DESCRIPTION
+#' @param year PARAM DESCRIPTION
+#' @param source PARAM DESCRIPTION
+#' @param save.xlsx PARAM DESCRIPTION, Default: FALSE
+#' @param filename PARAM DESCRIPTION, Default: NULL
+#' @param sheetName PARAM DESCRIPTION, Default: NULL
 #' @param ignore.invalid logical to indicate whether to ignore items data 
 #'   with invalid, incomplete or missing data, Default: FALSE
 #' @return A data frame with utility index scores of the KHQ5D.

@@ -13,13 +13,13 @@ KHQConvKHQ5D(
 )
 }
 \arguments{
-\item{scores}{PARAM_DESCRIPTION}
+\item{scores}{PARAM DESCRIPTION}
 
-\item{save.xlsx}{PARAM_DESCRIPTION, Default: FALSE}
+\item{save.xlsx}{PARAM DESCRIPTION, Default: FALSE}
 
-\item{filename}{PARAM_DESCRIPTION, Default: NULL}
+\item{filename}{PARAM DESCRIPTION, Default: NULL}
 
-\item{sheetName}{PARAM_DESCRIPTION, Default: NULL}
+\item{sheetName}{PARAM DESCRIPTION, Default: NULL}
 
 \item{ignore.invalid}{logical to indicate whether to ignore items data
 with invalid, incomplete or missing data, Default: FALSE}

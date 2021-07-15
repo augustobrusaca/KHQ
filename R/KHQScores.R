@@ -28,13 +28,13 @@
 
 #' @title KHQScores
 #' @description Function used to generate scores for each dimension of the KHQ.
-#' @param scores PARAM_DESCRIPTION
-#' @param country PARAM_DESCRIPTION
-#' @param author PARAM_DESCRIPTION
-#' @param year PARAM_DESCRIPTION
-#' @param save.xlsx PARAM_DESCRIPTION, Default: FALSE
-#' @param filename PARAM_DESCRIPTION, Default: NULL
-#' @param sheetName PARAM_DESCRIPTION, Default: NULL
+#' @param scores PARAM DESCRIPTION
+#' @param country PARAM DESCRIPTION
+#' @param author PARAM DESCRIPTION
+#' @param year PARAM DESCRIPTION
+#' @param save.xlsx PARAM DESCRIPTION, Default: FALSE
+#' @param filename PARAM DESCRIPTION, Default: NULL
+#' @param sheetName PARAM DESCRIPTION, Default: NULL
 #' @param ignore.invalid logical to indicate whether to ignore items data 
 #'   with invalid, incomplete or missing data, Default: FALSE
 #' @return A data frame with scores of each dimension of the KHQ.

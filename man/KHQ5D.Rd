@@ -18,23 +18,23 @@ KHQ5D(
 )
 }
 \arguments{
-\item{scores}{PARAM_DESCRIPTION}
+\item{scores}{PARAM DESCRIPTION}
 
-\item{country}{PARAM_DESCRIPTION}
+\item{country}{PARAM DESCRIPTION}
 
-\item{type}{PARAM_DESCRIPTION}
+\item{type}{PARAM DESCRIPTION}
 
-\item{author}{PARAM_DESCRIPTION}
+\item{author}{PARAM DESCRIPTION}
 
-\item{year}{PARAM_DESCRIPTION}
+\item{year}{PARAM DESCRIPTION}
 
-\item{source}{PARAM_DESCRIPTION}
+\item{source}{PARAM DESCRIPTION}
 
-\item{save.xlsx}{PARAM_DESCRIPTION, Default: FALSE}
+\item{save.xlsx}{PARAM DESCRIPTION, Default: FALSE}
 
-\item{filename}{PARAM_DESCRIPTION, Default: NULL}
+\item{filename}{PARAM DESCRIPTION, Default: NULL}
 
-\item{sheetName}{PARAM_DESCRIPTION, Default: NULL}
+\item{sheetName}{PARAM DESCRIPTION, Default: NULL}
 
 \item{ignore.invalid}{logical to indicate whether to ignore items data
 with invalid, incomplete or missing data, Default: FALSE}

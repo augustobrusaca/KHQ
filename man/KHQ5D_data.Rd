@@ -8,30 +8,30 @@
 This data frame has 30 rows and the following 5 columns:
 \describe{
 \item{RL}{Role Limitations:
-\enumerate{1. Your bladder problem does not affect your household tasks, job, or normal daily activities outside the home;}
-\enumerate{2. Your bladder problem slightly affects your household tasks, job, or normal daily activities outside the home;}
-\enumerate{3. Your bladder problem moderately affects your household tasks, job, or normal daily activities outside the home;}
-\enumerate{4. Your bladder problem affects your household tasks, job, or normal daily activities outside the home a lot.}}
+1. Your bladder problem does not affect your household tasks, job, or normal daily activities outside the home;
+2. Your bladder problem slightly affects your household tasks, job, or normal daily activities outside the home;
+3. Your bladder problem moderately affects your household tasks, job, or normal daily activities outside the home;
+4. Your bladder problem affects your household tasks, job, or normal daily activities outside the home a lot.}
 \item{PL}{Physical Limitations:
-\enumerate{1. Your bladder problem does not affect your physical activities or ability to travel;}
-\enumerate{2. Your bladder problem slightly affects your physical activities or ability to travel;}
-\enumerate{3. Your bladder problem moderately affects your physical activities or ability to travel;}
-\enumerate{4. Your bladder problem affects your physical activities or ability to travel a lot.}}
+1. Your bladder problem does not affect your physical activities or ability to travel;
+2. Your bladder problem slightly affects your physical activities or ability to travel;
+3. Your bladder problem moderately affects your physical activities or ability to travel;
+4. Your bladder problem affects your physical activities or ability to travel a lot.}
 \item{SL}{Social Limitations:
-\enumerate{1. Your bladder problem does not limit your ability to see/visit friends or affect your family life;}
-\enumerate{2. Your bladder problem slightly limits your ability to see/visit friends or affects your family life;}
-\enumerate{3. Your bladder problem moderately limits your ability to see/visit friends or affects your family life;}
-\enumerate{4. Your bladder problem limits your ability to see/visit friends or affects your family life a lot.}}
+1. Your bladder problem does not limit your ability to see/visit friends or affect your family life;
+2. Your bladder problem slightly limits your ability to see/visit friends or affects your family life;
+3. Your bladder problem moderately limits your ability to see/visit friends or affects your family life;
+4. Your bladder problem limits your ability to see/visit friends or affects your family life a lot.}
 \item{E}{Emotions:
-\enumerate{1. Your bladder problem does not make you feel depressed or anxious and nervous;}
-\enumerate{2. Your bladder problem makes you feel slightly depressed or anxious and nervous;}
-\enumerate{3. Your bladder problem makes you feel moderately depressed or anxious and nervous;}
-\enumerate{4. Your bladder problem makes you feel depressed or anxious and nervous a lot.}}
+1. Your bladder problem does not make you feel depressed or anxious and nervous;
+2. Your bladder problem makes you feel slightly depressed or anxious and nervous;
+3. Your bladder problem makes you feel moderately depressed or anxious and nervous;
+4. Your bladder problem makes you feel depressed or anxious and nervous a lot.}
 \item{S}{Sleep:
-\enumerate{1. Your bladder problem does not affect your sleep;}
-\enumerate{2. Your bladder problem slightly affects your sleep;}
-\enumerate{3. Your bladder problem moderately affects your sleep;}
-\enumerate{4. Your bladder problem affects your sleep a lot.}}
+1. Your bladder problem does not affect your sleep;
+2. Your bladder problem slightly affects your sleep;
+3. Your bladder problem moderately affects your sleep;
+4. Your bladder problem affects your sleep a lot.}
 }
 }
 \source{

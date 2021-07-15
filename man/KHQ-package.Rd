@@ -6,13 +6,14 @@
 \alias{KHQ-package}
 \title{KHQ: Methods for Calculating King's Health Questionnaire (KHQ) Scores and KHQ Five Dimensions (KHQ5D) Utility Index Scores}
 \description{
-The KHQ is a disease-specific, self-administered questionnaire 
-  designed specific to assess the impact of Urinary incontinence (UI) on QoL. 
-  The questionnaire was developed by Kelleher and collaborators in 1997. It is 
-  a simple, acceptable and reliable measure to use in the clinical setting and 
-  a research tool that is useful in evaluating UI treatment outcomes. This 
-  package calculates scores for each dimension of the KHQ; converts KHQ item 
-  scores to KHQ5D scores; and also calculates the utility index of the KHQ5D.
+The King's Health Questionnaire (KHQ) is a disease-specific, 
+  self-administered questionnaire designed specific to assess the impact of 
+  Urinary incontinence on Quality of Life. The questionnaire was developed 
+  by Kelleher and collaborators in 1997. It is a simple, acceptable and 
+  reliable measure to use in the clinical setting and a research tool that 
+  is useful in evaluating UI treatment outcomes. This package calculates
+  scores for each dimension of the KHQ; converts KHQ item  scores to KHQ five
+  dimensions (KHQ5D) scores; and also calculates the utility index of the KHQ5D.
 }
 \seealso{
 Useful links:
