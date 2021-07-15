@@ -77,7 +77,10 @@ devtools::install_github("augustobrusaca/KHQ")
 ``` r
 library(KHQ)
 
-# The items must be named equal the number in the original questionnaire published by Kelleher and collaborator in 1997 (1, 2, 3a, 3b, 4a, 4b, 4c, 4d, 5a, 5b, 5c, 6a, 6b, 6c, 7a, 7b, 8a, 8b, 8c, 8d, 8e, 9a, 9b, 9c, 9d, 9e, 9f, 9g, 9h, 9i, 9j, 9k)
+# The items must be named equal the number in the original questionnaire
+# published by Kelleher and collaborator in 1997 (1, 2, 3a, 3b, 4a, 4b, 
+# 4c, 4d, 5a, 5b, 5c, 6a, 6b, 6c, 7a, 7b, 8a, 8b, 8c, 8d, 8e, 9a, 9b, 9c, 
+# 9d, 9e, 9f, 9g, 9h, 9i, 9j, 9k)
 
 # Kelleher et al. (1997)
 
@@ -105,13 +108,18 @@ scores_UK <- data.frame(
   "5a" = c(1,2,3,4,1,NA), "5b" = c(1,2,3,4,NA,1), "5c" = c(1,2,3,4,0,1),
   "6a" = c(1,2,3,4,NA,NA), "6b" = c(1,2,3,4,NA,NA), "6c" = c(1,2,3,4,NA,NA),
   "7a" = c(1,2,3,4,NA,NA), "7b" = c(1,2,3,4,NA,NA),
-  "8a" = c(1,2,3,4,NA,NA), "8b" = c(1,2,3,4,NA,NA), "8c" = c(1,2,3,4,NA,NA), "8d" = c(1,2,3,4,NA,NA), "8e" = c(1,2,3,4,NA,NA),
-  "9a" = c(0,1,2,3,NA,NA), "9b" = c(0,1,2,3,NA,NA), "9c" = c(0,1,2,3,NA,NA), "9d" = c(0,1,2,3,NA,NA), "9e" = c(0,1,2,3,NA,NA), "9f" = c(0,1,2,3,NA,NA), "9g" = c(0,1,2,3,NA,NA), "9h" = c(0,1,2,3,NA,NA), "9i" = c(0,1,2,3,NA,NA), "9j" = c(0,1,2,3,NA,NA), "9k" = c(0,1,2,3,NA,NA),
+  "8a" = c(1,2,3,4,NA,NA), "8b" = c(1,2,3,4,NA,NA), "8c" = c(1,2,3,4,NA,NA), 
+  "8d" = c(1,2,3,4,NA,NA), "8e" = c(1,2,3,4,NA,NA),
+  "9a" = c(0,1,2,3,NA,NA), "9b" = c(0,1,2,3,NA,NA), "9c" = c(0,1,2,3,NA,NA), 
+  "9d" = c(0,1,2,3,NA,NA), "9e" = c(0,1,2,3,NA,NA), "9f" = c(0,1,2,3,NA,NA), 
+  "9g" = c(0,1,2,3,NA,NA), "9h" = c(0,1,2,3,NA,NA), "9i" = c(0,1,2,3,NA,NA), 
+  "9j" = c(0,1,2,3,NA,NA), "9k" = c(0,1,2,3,NA,NA),
   check.names = FALSE)
 
 
 # Original algorithm
-KHQScores(scores = scores_UK, country = "UK", author = "Kelleher", year = 1997, ignore.invalid = TRUE)
+KHQScores(scores = scores_UK, country = "UK", author = "Kelleher", 
+          year = 1997, ignore.invalid = TRUE)
 #>   GHP        II        RL        PL        SL        PR         E        SE
 #> 1   0   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
 #> 2  25  33.33333  33.33333  33.33333  33.33333  33.33333  33.33333  33.33333
@@ -137,13 +145,22 @@ UK_scores <- data.frame(
   "5a" = c(4,3,2,1,1,NA), "5b" = c(1,2,3,4,NA,1), "5c" = c(4,3,2,1,0,1),
   "6a" = c(1,2,3,4,2,NA), "6b" = c(4,3,2,1,2,NA), "6c" = c(1,2,3,4,4,NA),
   "7a" = c(4,3,2,1,NA,3), "7b" = c(1,2,3,4,NA,3),
-  "8a" = c(4,3,2,1,4,NA), "8b" = c(1,2,3,4,2,NA), "8c" = c(4,3,2,1,2,NA), "8d" = c(4,3,2,1,NA,NA), "8e" = c(1,2,3,4,NA,NA),
-  "9a" = c(0,1,2,3,NA,NA), "9b" = c(3,2,1,0,NA,NA), "9c" = c(0,1,2,3,NA,NA), "9d" = c(3,2,1,0,NA,NA), "9e" = c(0,1,2,3,NA,NA), "9f" = c(3,2,1,0,NA,NA), "9g" = c(0,1,2,3,NA,NA), "9h" = c(3,2,1,0,NA,NA), "9i" = c(0,1,2,3,NA,NA), "9j" = c(3,2,1,0,NA,NA), "9k" = c(0,1,2,3,NA,NA),
+  "8a" = c(4,3,2,1,4,NA), "8b" = c(1,2,3,4,2,NA), "8c" = c(4,3,2,1,2,NA), 
+  "8d" = c(4,3,2,1,NA,NA), "8e" = c(1,2,3,4,NA,NA),
+  "9a" = c(0,1,2,3,NA,NA), "9b" = c(3,2,1,0,NA,NA), "9c" = c(0,1,2,3,NA,NA), 
+  "9d" = c(3,2,1,0,NA,NA), "9e" = c(0,1,2,3,NA,NA), "9f" = c(3,2,1,0,NA,NA), 
+  "9g" = c(0,1,2,3,NA,NA), "9h" = c(3,2,1,0,NA,NA), "9i" = c(0,1,2,3,NA,NA), 
+  "9j" = c(3,2,1,0,NA,NA), "9k" = c(0,1,2,3,NA,NA),
   check.names = FALSE)
 
 
-# There is an option to use the 'save.xlsx', where you can enter the 'filename' and 'sheetName'. The file with the calculated scores is saved in .xlsx format (Excel file).
-KHQScores(scores = UK_scores, country = "UK", author = "Kelleher", year = 1997, save.xlsx = FALSE, filename = "Res_Scores_Dimensions_KHQ.xlsx", sheetName = "Scores", ignore.invalid = TRUE)
+# There is an option to use the 'save.xlsx', where you can enter the 
+# 'filename' and 'sheetName'. The file with the calculated scores is 
+# saved in .xlsx format (Excel file).
+KHQScores(scores = UK_scores, country = "UK", author = "Kelleher", 
+          year = 1997, save.xlsx = FALSE, 
+          filename = "Res_Scores_Dimensions_KHQ.xlsx", 
+          sheetName = "Scores", ignore.invalid = TRUE)
 #>   GHP        II        RL       PL       SL PR        E       SE       SM SSS
 #> 1   0 100.00000   0.00000 50.00000 66.66667 50 33.33333 50.00000 60.00000  15
 #> 2  25  66.66667  33.33333 16.66667 55.55556 50 44.44444 50.00000 53.33333  16
@@ -157,7 +174,8 @@ KHQScores(scores = UK_scores, country = "UK", author = "Kelleher", year = 1997, 
 
 ``` r
 # Nine items of the KHQ are used to calculate the KHQ5D scores.
-# The items must be named equal the number in the original questionnaire (3a, 3b, 4a, 4b, 4d, 5c, 6a, 6b, 7a)
+# The items must be named equal the number in the original 
+# questionnaire (3a, 3b, 4a, 4b, 4d, 5c, 6a, 6b, 7a)
 
 # Original domains and items
 #         Domains             Items
@@ -178,7 +196,8 @@ KHQScores(scores = UK_scores, country = "UK", author = "Kelleher", year = 1997, 
 # Sleep                 - 7a
 
 
-# Converting the KHQ items into the KHQ5D classification using a data.frame with all items completed
+# Converting the KHQ items into the KHQ5D classification using a 
+# data.frame with all items completed
 scores <- data.frame(
   "3a" = c(4,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -201,7 +220,9 @@ KHQConvKHQ5D(scores = scores, ignore.invalid = FALSE)
 #> 5  2  4  2 1 4
 
 
-# Converting the KHQ items into the KHQ5D classification using a data.frame with a missing response. In this example, use ignore.invalid = TRUE to avoid any problems with missing data.
+# Converting the KHQ items into the KHQ5D classification using a 
+# data.frame with a missing response. In this example, use 
+# ignore.invalid = TRUE to avoid any problems with missing data.
 scores_2 <- data.frame(
   "3a" = c(4,3,4,3,2), 
   "3b" = c(4,3,4,3,2), 
@@ -225,7 +246,9 @@ KHQConvKHQ5D(scores = scores_2, ignore.invalid = TRUE)
 
 
 # As with in the KHQScore function it is possible to use the 'save.xlsx'.
-KHQConvKHQ5D(scores = scores, save.xlsx = FALSE, filename = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores", ignore.invalid = TRUE)
+KHQConvKHQ5D(scores = scores, save.xlsx = FALSE, 
+             filename = "KHQ_conv_KHQ5D.xlsx", 
+             sheetName = "Scores", ignore.invalid = TRUE)
 #>   RL PL SL E S
 #> 1  4  1  2 3 1
 #> 2  3  3  2 2 3
@@ -237,30 +260,40 @@ KHQConvKHQ5D(scores = scores, save.xlsx = FALSE, filename = "KHQ_conv_KHQ5D.xlsx
 ### KHQ5D function - calculating the utility index of the KHQ5D
 
 ``` r
-# Named vector RL, PL, SL, E and S represent Role limitation, Physical limitation, Social Limitation, Emotions and Sleep, respectfully.
+# Named vector RL, PL, SL, E and S represent Role limitation, 
+# Physical limitation, Social Limitation, Emotions and Sleep, 
+# respectfully.
 
 # single calculation using the UK SG value set
 scores <- c(RL = 1, PL = 1, SL = 1, E = 1, S = 1)
 
-KHQ5D(scores = scores, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = scores, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 
 # or
 
-KHQ5D(scores = c(RL=1,PL=1,SL=1,E=1,S=1), country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = c(RL=1,PL=1,SL=1,E=1,S=1), country = "UK", 
+      type = "SG", author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 
 
 # Using five digit format
-KHQ5D(scores = 11111, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = 11111, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 
 # or
 
-KHQ5D(scores = c(11111), country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = c(11111), country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 
@@ -274,7 +307,9 @@ scores.df <- data.frame(
   S = c(1,2,1,2,1)
 )
 
-KHQ5D(scores = scores.df, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = scores.df, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.990
 #> 2        0.946
@@ -286,7 +321,9 @@ KHQ5D(scores = scores.df, country = "UK", type = "SG", author = "Brazier", year 
 # Data.frame using five digit format
 scores.df2 <- data.frame(state = c(11111, 22432, 34241, 43332, 22141))
 
-KHQ5D(scores = scores.df2, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = scores.df2, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 #> 2        0.930
@@ -296,7 +333,9 @@ KHQ5D(scores = scores.df2, country = "UK", type = "SG", author = "Brazier", year
 
 # or using a vector
 
-KHQ5D(scores = scores.df2$state, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+KHQ5D(scores = scores.df2$state, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.996
 #> 2        0.930
@@ -306,7 +345,10 @@ KHQ5D(scores = scores.df2$state, country = "UK", type = "SG", author = "Brazier"
 
 
 # As with in the KHQScore function it is possible to use the 'save.xlsx'.
-KHQ5D(scores = scores.df, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", save.xlsx = FALSE, filename = "Res_KHQ5D_uti_ind.xlsx", sheetName = "Utility_Index", ignore.invalid = TRUE)
+KHQ5D(scores = scores.df, country = "UK", type = "SG", 
+      author = "Brazier", year = 2008, source = "KHQ", 
+      save.xlsx = FALSE, filename = "Res_KHQ5D_uti_ind.xlsx", 
+      sheetName = "Utility_Index", ignore.invalid = TRUE)
 #>   UtilityIndex
 #> 1        0.990
 #> 2        0.946
@@ -325,7 +367,9 @@ name of the data set.
 scores_UK <- KHQ_data_Kelleher
 
 # Calculating the scores of each dimension
-scores_KHQ <- KHQScores(scores = scores_UK, country = "UK", author = "Kelleher", year = 1997, ignore.invalid = TRUE)
+scores_KHQ <- KHQScores(scores = scores_UK, country = "UK", 
+                        author = "Kelleher", year = 1997, 
+                        ignore.invalid = TRUE)
 
 # Top 6 scores
 head(scores_KHQ)
@@ -364,7 +408,9 @@ head(scores_KHQ5D)
 
 ## Calculating the utility index of the KHQ5D using the converted scores
 # Calculating the scores of each dimension
-uti_index <- KHQ5D(scores = scores_KHQ5D, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+uti_index <- KHQ5D(scores = scores_KHQ5D, country = "UK", 
+                   type = "SG", author = "Brazier", year = 2008, 
+                   source = "KHQ", ignore.invalid = TRUE)
 
 # Top 6 scores
 head(uti_index)
@@ -381,7 +427,9 @@ head(uti_index)
 KHQ5D_scores <- KHQ5D_data
 
 # Calculate the scores of each dimension
-df_uti_index <- KHQ5D(scores = KHQ5D_scores, country = "UK", type = "SG", author = "Brazier", year = 2008, source = "KHQ", ignore.invalid = TRUE)
+df_uti_index <- KHQ5D(scores = KHQ5D_scores, country = "UK", 
+                      type = "SG", author = "Brazier", year = 2008, 
+                      source = "KHQ", ignore.invalid = TRUE)
 
 # Top 6 scores
 head(df_uti_index)
@@ -433,7 +481,8 @@ be corrected multiple times.
 # Checking number of items
 scores_UK_1 <- cbind(scores_UK, item = scores_UK[,1])
 
-KHQScores(scores = scores_UK_1, country = "UK", author = "Kelleher", year = 1997, ignore.invalid = TRUE)
+KHQScores(scores = scores_UK_1, country = "UK", author = "Kelleher", 
+          year = 1997, ignore.invalid = TRUE)
 #>  [1] "1"    "2"    "3a"   "3b"   "4a"   "4b"   "4c"   "4d"   "5a"   "5b"  
 #> [11] "5c"   "6a"   "6b"   "6c"   "7a"   "7b"   "8a"   "8b"   "8c"   "8d"  
 #> [21] "8e"   "9a"   "9b"   "9c"   "9d"   "9e"   "9f"   "9g"   "9h"   "9i"  
