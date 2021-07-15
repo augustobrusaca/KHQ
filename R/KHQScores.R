@@ -28,13 +28,22 @@
 
 #' @title KHQScores
 #' @description Function used to generate scores for each dimension of the KHQ.
-#' @param scores PARAM DESCRIPTION
-#' @param country PARAM DESCRIPTION
-#' @param author PARAM DESCRIPTION
-#' @param year PARAM DESCRIPTION
-#' @param save.xlsx PARAM DESCRIPTION, Default: FALSE
-#' @param filename PARAM DESCRIPTION, Default: NULL
-#' @param sheetName PARAM DESCRIPTION, Default: NULL
+#' @param scores data.frame containing all the KHQ items. See the 'Details' for 
+#'   information on naming the data.frame columns.
+#' @param country string specifying the country to calculate the correct KHQ 
+#'   structure scores. Most countries where the KHQ has been translated use 
+#'   the same structure as the original version (Kelleher et al., 1997), so 
+#'   use UK. If the structure of your country has changed, use your country's 
+#'   acronym.
+#' @param author string specifying the author of the article who published the 
+#'   structure used to calculate the score.
+#' @param year string specifying the year the article with the structure used 
+#'   to calculated the scores was published.
+#' @param save.xlsx logical to indicate whether or not save the results; Default: FALSE.
+#' @param filename string specifying the file name if save.xlsx = TRUE; 
+#'   Default: "Res_Scores_Dimensions_KHQ.xlsx".
+#' @param sheetName string specifying the sheet name if save.xlsx = TRUE; 
+#'   Default: "Scores".
 #' @param ignore.invalid logical to indicate whether to ignore items data 
 #'   with invalid, incomplete or missing data, Default: FALSE
 #' @return A data frame with scores of each dimension of the KHQ.

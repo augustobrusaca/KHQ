@@ -22,12 +22,15 @@
 
 #' @title KHQConvKHQ5D
 #' @description Function used to convert the KHQ item scores to KHQ5D scores.
-#' @param scores PARAM DESCRIPTION
-#' @param save.xlsx PARAM DESCRIPTION, Default: FALSE
-#' @param filename PARAM DESCRIPTION, Default: NULL
-#' @param sheetName PARAM DESCRIPTION, Default: NULL
+#' @param scores data.frame containing 9 items that compose the KHQ5D; colnames
+#'   must be 3a, 3b, 4a, 4b, 4d, 5c, 6a, 6b, and 7a.
+#' @param save.xlsx logical to indicate whether or not save the results; Default: FALSE.
+#' @param filename string specifying the file name if save.xlsx = TRUE; 
+#'   Default: "KHQ_conv_KHQ5D.xlsx".
+#' @param sheetName string specifying the sheet name if save.xlsx = TRUE; 
+#'   Default: "Scores".
 #' @param ignore.invalid logical to indicate whether to ignore items data 
-#'   with invalid, incomplete or missing data, Default: FALSE
+#'   with invalid, incomplete or missing data; Default: FALSE
 #' @return A data frame with scores of the KHQ five dimensions (KHQ5D).
 #' @details Nine items of the KHQ are used to calculate the KHQ5D scores. The 
 #'   items must be named equal the number in the original questionnaire (3a, 3b, 

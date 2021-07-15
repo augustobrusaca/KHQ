@@ -7,38 +7,102 @@
 #'
 #' @format This data frame has 30 rows and the following 32 columns:
 #' \describe{
-#'   \item{1}{General Health Perception: How would you describe your health at the present?}
-#'   \item{2}{Incontinence Impact}
-#'   \item{3a}{Role Limitations}
-#'   \item{3b}{Role Limitations}
-#'   \item{4a}{Physical Limitations}
-#'   \item{4b}{Physical Limitations}
-#'   \item{4c}{Social Limitations}
-#'   \item{4d}{Social Limitations}
-#'   \item{5a}{Personal Relationship}
-#'   \item{5b}{Personal Relationship}
-#'   \item{5c}{Personal Relationship}
-#'   \item{6a}{Emotions}
-#'   \item{6b}{Emotions}
-#'   \item{6c}{Emotions}
-#'   \item{7a}{Sleep/Energy}
-#'   \item{7b}{Sleep/Energy}
-#'   \item{8a}{Severity Measures}
-#'   \item{8b}{Severity Measures}
-#'   \item{8c}{Severity Measures}
-#'   \item{8d}{Severity Measures}
-#'   \item{8e}{Severity Measures}
-#'   \item{9a}{Symptom Severity Scale}
-#'   \item{9b}{Symptom Severity Scale}
-#'   \item{9c}{Symptom Severity Scale}
-#'   \item{9d}{Symptom Severity Scale}
-#'   \item{9e}{Symptom Severity Scale}
-#'   \item{9f}{Symptom Severity Scale}
-#'   \item{9g}{Symptom Severity Scale}
-#'   \item{9h}{Symptom Severity Scale}
-#'   \item{9i}{Symptom Severity Scale}
-#'   \item{9j}{Symptom Severity Scale}
-#'   \item{9k}{Symptom Severity Scale}
+#'   \item{1}{General Health Perception: 
+#'     Q - How would you describe your health at the present? 
+#'     R - 1 = Very good; 2 = Good; 3 = Fair; 4 = Poor; 5 = Very poor.}
+#'   \item{2}{Incontinence Impact: 
+#'     Q - How much do you think your bladder problem affects your life? 
+#'     R - 1 = Not at all; 2 = A little; 3 = Moderately; 4 = A lot.}
+#'   \item{3a}{Role Limitations: 
+#'     Q - To what extent does your bladder problem affect your household tasks (e.g., cleaning, shopping etc)? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{3b}{Role Limitations: 
+#'     Q - Does your bladder problem affect your job, or your normal daily activities outside the home? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4a}{Physical Limitations: 
+#'     Q - Does your bladder problem affect your physical activities (e.g., going for a walk, run, sport, gym etc)? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4b}{Physical Limitations: 
+#'     Q - Does your bladder problem affect your ability to travel? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4c}{Social Limitations: 
+#'     Q - Does your bladder problem restrict your social life? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4d}{Social Limitations: 
+#'     Q - Does your bladder problem limit your ability to see/visit friends? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{5a}{Personal Relationship: 
+#'     Q - Does your bladder problem affect your relationship with your partner? 
+#'     R - 0 = Not applicable; 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{5b}{Personal Relationship: 
+#'     Q - Does your bladder problem affect your sex life? 
+#'     R - 0 = Not applicable; 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{5c}{Personal Relationship: 
+#'     Q - Does your bladder problem affect your family life? 
+#'     R - 0 = Not applicable; 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{6a}{Emotions: 
+#'     Q - Does your bladder problem make you feel depressed? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{6b}{Emotions: 
+#'     Q - Does your bladder problem make you feel anxious or nervous? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{6c}{Emotions: 
+#'     Q - Does your bladder problem make you feel bad about yourself? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{7a}{Sleep/Energy: 
+#'     Q - Does your bladder problem affect your sleep? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{7b}{Sleep/Energy: 
+#'     Q - Do you feel worn out or tired? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{8a}{Severity Measures: 
+#'     Q - Do you do any of the following; if so how much? Wear pads to keep dry? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{8b}{Severity Measures:   
+#'     Q - Do you do any of the following; if so how much? Be careful how much fluid you drink? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{8c}{Severity Measures: 
+#'     Q - Do you do any of the following; if so how much? Change your underclothes when they get wet? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{8d}{Severity Measures: 
+#'     Q - Do you do any of the following; if so how much? Worry in case you smell? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{8e}{Severity Measures: 
+#'     Q - Do you do any of the following; if so how much? Get embarrassed because of your bladder problem? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
+#'   \item{9a}{Symptom Severity Scale:
+#'     Q - Frequency: Going to the toilet very often; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9b}{Symptom Severity Scale:
+#'     Q - Nocturia: Getting up at night to pass urine; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9c}{Symptom Severity Scale:
+#'     Q - Urgency: A strong and difficult to control desire to pass urine; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9d}{Symptom Severity Scale:
+#'     Q - Urge incontinence: Urinary leakage associated with a strong desire to pass urine; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9e}{Symptom Severity Scale:
+#'     Q - Stress incontinence: Urinary leakage with physical activity, e.g., coughing, sneezing, running; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9f}{Symptom Severity Scale:
+#'     Q - Nocturnal enuresis: Wetting the bed at night; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9g}{Symptom Severity Scale:
+#'     Q - Intercourse incontinence: Urinary leakage with sexual intercourse; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9h}{Symptom Severity Scale:
+#'     Q - Frequent waterworks infections; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9i}{Symptom Severity Scale:
+#'     Q - Bladder pain; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9j}{Symptom Severity Scale:
+#'     Q - Difficulty passing urine; 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
+#'   \item{9k}{Symptom Severity Scale:
+#'     Q - Other (Please specify); 
+#'     R - 1 = A little; 2 = Moderately; 3 = A lot; 0 = Omitted.}
 #' }
 #' 
 #' @usage KHQ_data_Kelleher
@@ -207,15 +271,33 @@
 #'
 #' @format This data frame has 30 rows and the following 9 columns:
 #' \describe{
-#'   \item{3a}{Role Limitations}
-#'   \item{3b}{Role Limitations}
-#'   \item{4a}{Physical Limitations}
-#'   \item{4b}{Physical Limitations}
-#'   \item{4d}{Social Limitations}
-#'   \item{5c}{Personal Relationship}
-#'   \item{6a}{Emotions}
-#'   \item{6b}{Emotions}
-#'   \item{7a}{Sleep/Energy}
+#'   \item{3a}{Role Limitations: 
+#'     Q - To what extent does your bladder problem affect your household tasks (e.g., cleaning, shopping etc)? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{3b}{Role Limitations: 
+#'     Q - Does your bladder problem affect your job, or your normal daily activities outside the home? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4a}{Physical Limitations: 
+#'     Q - Does your bladder problem affect your physical activities (e.g., going for a walk, run, sport, gym etc)? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4b}{Physical Limitations: 
+#'     Q - Does your bladder problem affect your ability to travel? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{4d}{Social Limitations: 
+#'     Q - Does your bladder problem limit your ability to see/visit friends? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{5c}{Personal Relationship: 
+#'     Q - Does your bladder problem affect your family life? 
+#'     R - 0 = Not applicable; 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{6a}{Emotions: 
+#'     Q - Does your bladder problem make you feel depressed? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{6b}{Emotions: 
+#'     Q - Does your bladder problem make you feel anxious or nervous? 
+#'     R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+#'   \item{7a}{Sleep/Energy: 
+#'     Q - Does your bladder problem affect your sleep? 
+#'     R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
 #' }
 #' 
 #' @usage KHQ_Conv_KHQ5D_data

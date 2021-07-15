@@ -13,16 +13,19 @@ KHQConvKHQ5D(
 )
 }
 \arguments{
-\item{scores}{PARAM DESCRIPTION}
+\item{scores}{data.frame containing 9 items that compose the KHQ5D; colnames
+must be 3a, 3b, 4a, 4b, 4d, 5c, 6a, 6b, and 7a.}
 
-\item{save.xlsx}{PARAM DESCRIPTION, Default: FALSE}
+\item{save.xlsx}{logical to indicate whether or not save the results; Default: FALSE.}
 
-\item{filename}{PARAM DESCRIPTION, Default: NULL}
+\item{filename}{string specifying the file name if save.xlsx = TRUE;
+Default: "KHQ_conv_KHQ5D.xlsx".}
 
-\item{sheetName}{PARAM DESCRIPTION, Default: NULL}
+\item{sheetName}{string specifying the sheet name if save.xlsx = TRUE;
+Default: "Scores".}
 
 \item{ignore.invalid}{logical to indicate whether to ignore items data
-with invalid, incomplete or missing data, Default: FALSE}
+with invalid, incomplete or missing data; Default: FALSE}
 }
 \value{
 A data frame with scores of the KHQ five dimensions (KHQ5D).

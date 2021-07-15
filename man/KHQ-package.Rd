@@ -8,7 +8,7 @@
 \description{
 The King's Health Questionnaire (KHQ) is a disease-specific, 
   self-administered questionnaire designed specific to assess the impact of 
-  Urinary incontinence on Quality of Life. The questionnaire was developed 
+  Urinary Incontinence (UI) on Quality of Life. The questionnaire was developed 
   by Kelleher and collaborators in 1997. It is a simple, acceptable and 
   reliable measure to use in the clinical setting and a research tool that 
   is useful in evaluating UI treatment outcomes. This package calculates

@@ -3,17 +3,25 @@
 #' @title KHQ5D
 #' @description Function used to convert the scores of the five dimensions of 
 #'   the KHQ5D to a single utility index using country specific value set.
-#' @param scores PARAM DESCRIPTION
-#' @param country PARAM DESCRIPTION
-#' @param type PARAM DESCRIPTION
-#' @param author PARAM DESCRIPTION
-#' @param year PARAM DESCRIPTION
-#' @param source PARAM DESCRIPTION
-#' @param save.xlsx PARAM DESCRIPTION, Default: FALSE
-#' @param filename PARAM DESCRIPTION, Default: NULL
-#' @param sheetName PARAM DESCRIPTION, Default: NULL
+#' @param scores data.frame with colnames RL, PL, SL, E, and S representing 
+#'   Role limitation, Physical limitation, Social Limitation, Emotions 
+#'   and Sleep. Alternatively an KHQ5D score can be provided in five digit 
+#'   format e.g., 11111, c(11111).
+#' @param country string specifying the country in which the value set scores 
+#'   were calculated.
+#' @param type string specifying method type used in deriving value set scores.
+#' @param author string specifying the author of the article containing the 
+#'   value set scores.
+#' @param year string specifying the year the article containing the value set 
+#'   scores was published.
+#' @param source string specifying the version of the King's Health Questionnaire used.
+#' @param save.xlsx logical to indicate whether or not save the results; Default: FALSE.
+#' @param filename string specifying the file name if save.xlsx = TRUE; 
+#'   Default: "Res_KHQ5D_uti_ind.xlsx".
+#' @param sheetName string specifying the sheet name if save.xlsx = TRUE; 
+#'   Default: "Utility_Index".
 #' @param ignore.invalid logical to indicate whether to ignore items data 
-#'   with invalid, incomplete or missing data, Default: FALSE
+#'   with invalid, incomplete or missing data; Default: FALSE.
 #' @return A data frame with utility index scores of the KHQ5D.
 #' @details Named vector RL, PL, SL, E and S represent Role limitation, 
 #'   Physical limitation, Social Limitation, Emotions and Sleep, respectfully.

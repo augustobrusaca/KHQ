@@ -18,26 +18,34 @@ KHQ5D(
 )
 }
 \arguments{
-\item{scores}{PARAM DESCRIPTION}
+\item{scores}{data.frame with colnames RL, PL, SL, E, and S representing
+Role limitation, Physical limitation, Social Limitation, Emotions
+and Sleep. Alternatively an KHQ5D score can be provided in five digit
+format e.g., 11111, c(11111).}
 
-\item{country}{PARAM DESCRIPTION}
+\item{country}{string specifying the country in which the value set scores
+were calculated.}
 
-\item{type}{PARAM DESCRIPTION}
+\item{type}{string specifying method type used in deriving value set scores.}
 
-\item{author}{PARAM DESCRIPTION}
+\item{author}{string specifying the author of the article containing the
+value set scores.}
 
-\item{year}{PARAM DESCRIPTION}
+\item{year}{string specifying the year the article containing the value set
+scores was published.}
 
-\item{source}{PARAM DESCRIPTION}
+\item{source}{string specifying the version of the King's Health Questionnaire used.}
 
-\item{save.xlsx}{PARAM DESCRIPTION, Default: FALSE}
+\item{save.xlsx}{logical to indicate whether or not save the results; Default: FALSE.}
 
-\item{filename}{PARAM DESCRIPTION, Default: NULL}
+\item{filename}{string specifying the file name if save.xlsx = TRUE;
+Default: "Res_KHQ5D_uti_ind.xlsx".}
 
-\item{sheetName}{PARAM DESCRIPTION, Default: NULL}
+\item{sheetName}{string specifying the sheet name if save.xlsx = TRUE;
+Default: "Utility_Index".}
 
 \item{ignore.invalid}{logical to indicate whether to ignore items data
-with invalid, incomplete or missing data, Default: FALSE}
+with invalid, incomplete or missing data; Default: FALSE.}
 }
 \value{
 A data frame with utility index scores of the KHQ5D.

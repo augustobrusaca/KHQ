@@ -7,15 +7,33 @@
 \format{
 This data frame has 30 rows and the following 9 columns:
 \describe{
-\item{3a}{Role Limitations}
-\item{3b}{Role Limitations}
-\item{4a}{Physical Limitations}
-\item{4b}{Physical Limitations}
-\item{4d}{Social Limitations}
-\item{5c}{Personal Relationship}
-\item{6a}{Emotions}
-\item{6b}{Emotions}
-\item{7a}{Sleep/Energy}
+\item{3a}{Role Limitations:
+Q - To what extent does your bladder problem affect your household tasks (e.g., cleaning, shopping etc)?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{3b}{Role Limitations:
+Q - Does your bladder problem affect your job, or your normal daily activities outside the home?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{4a}{Physical Limitations:
+Q - Does your bladder problem affect your physical activities (e.g., going for a walk, run, sport, gym etc)?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{4b}{Physical Limitations:
+Q - Does your bladder problem affect your ability to travel?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{4d}{Social Limitations:
+Q - Does your bladder problem limit your ability to see/visit friends?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{5c}{Personal Relationship:
+Q - Does your bladder problem affect your family life?
+R - 0 = Not applicable; 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{6a}{Emotions:
+Q - Does your bladder problem make you feel depressed?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{6b}{Emotions:
+Q - Does your bladder problem make you feel anxious or nervous?
+R - 1 = Not at all; 2 = Slightly; 3 = Moderately; 4 = A lot.}
+\item{7a}{Sleep/Energy:
+Q - Does your bladder problem affect your sleep?
+R - 1 = Never; 2 = Sometimes; 3 = Often; 4 = Very much.}
 }
 }
 \source{
