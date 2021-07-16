@@ -59,32 +59,50 @@ Named vector RL, PL, SL, E and S represent Role limitation,
 Physical limitation, Social Limitation, Emotions and Sleep, respectfully.
 }
 \examples{
-\dontrun{
-KHQ5D(
-  scores = KHQ5D_data,
-  country = "UK",
-  type = "SG",
-  author = "Brazier",
-  year = 2008,
-  source = "KHQ",
-  ignore.invalid = TRUE
-)
+KHQ5D(scores = c(RL=1,PL=1,SL=1,E=1,S=1), country = "UK", 
+  type = "SG", author = "Brazier", year = 2008, 
+  source = "KHQ", ignore.invalid = TRUE)
 
-or
-
-#' KHQ5D(
-  scores = KHQ5D_data,
-  country = "UK",
-  type = "SG",
-  author = "Brazier",
-  year = 2008,
-  source = "KHQ",
-  save.xlsx = TRUE,
+KHQ5D(scores = c(RL=1,PL=1,SL=1,E=1,S=1), country = "UK",
+  type = "SG", author = "Brazier", year = 2008,
+  source = "KHQ", save.xlsx = FALSE, 
   filename = "Res_KHQ5D_uti_ind.xlsx",
   sheetName = "Utility_Index",
-  ignore.invalid = TRUE
-)
-}
+  ignore.invalid = TRUE)
+
+KHQ5D(scores = 11111, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE)
+
+KHQ5D(scores = 11111, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE)
+
+scores.df <- data.frame(
+  RL = c(1,2,3,4,2), 
+  PL = c(4,3,4,3,2), 
+  SL = c(1,2,2,4,1), 
+  E = c(1,3,4,3,4), 
+  S = c(1,2,1,2,1)
+  )
+
+KHQ5D(scores = scores.df, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE) 
+
+scores.df2 <- data.frame(state = c(11111, 22432, 34241, 43332, 22141))
+
+KHQ5D(scores = scores.df2, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE)  
+
+KHQ5D(scores = scores.df2$state, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE)
+
+KHQ5D(scores = KHQ5D_data, country = "UK", type = "SG", 
+  author = "Brazier", year = 2008, source = "KHQ", 
+  ignore.invalid = TRUE) 
 
 }
 \seealso{

@@ -115,34 +115,21 @@ KHQ_data_Kelleher
 This data set contains an example of 30 responses of the KHQ.
 }
 \examples{
-\dontrun{
-KHQScores(
-  scores = KHQ_data_Kelleher,
-  country = "UK",
-  author = "Kelleher",
-  year = 1997,
-  ignore.invalid = TRUE
-)
+\donttest{
+KHQScores(scores = KHQ_data_Kelleher, country = "UK",
+  author = "Kelleher", year = 1997, ignore.invalid = TRUE)
 
-or
-
-KHQScores(
-  scores = KHQ_data_Kelleher,
-  country = "UK",
-  author = "Kelleher",
-  year = 1997,
-  save.xlsx = TRUE,
+KHQScores(scores = KHQ_data_Kelleher, country = "UK",
+  author = "Kelleher", year = 1997, save.xlsx = FALSE,
   filename = "Res_Scores_Dimensions_KHQ.xlsx",
-  sheetName = "Scores",
-  ignore.invalid = TRUE
-)
+  sheetName = "Scores", ignore.invalid = TRUE)
 }
 
 }
 \references{
 Kelleher CJ, Cardozo LD, Khullar V, Salvatore S. A new questionnaire
 to assess the quality of life of urinary incontinent women. Br J Obstet Gynaecol.
-1997 Dec;104(12):1374-9. doi: 10.1111/j.1471-0528.1997.tb11006.x.
+1997 Dec;104(12):1374-9. doi:10.1111/j.1471-0528.1997.tb11006.x.
 \href{https://pubmed.ncbi.nlm.nih.gov/9422015/}{PubMed}
 }
 \keyword{dataset}

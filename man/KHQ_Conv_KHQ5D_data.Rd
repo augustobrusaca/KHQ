@@ -47,28 +47,19 @@ This data set contains an example of 30 responses of the KHQ
 items used to convert to KHQ5D scores.
 }
 \examples{
-\dontrun{
-KHQConvKHQ5D(
-  scores = KHQ_Conv_KHQ5D_data,
-  ignore.invalid = TRUE
-)
+\donttest{
+KHQConvKHQ5D(scores = KHQ_Conv_KHQ5D_data, ignore.invalid = TRUE)
 
-or
-
-KHQConvKHQ5D(
-  scores = KHQ_Conv_KHQ5D_data,
-  save.xlsx = TRUE,
-  filename = "KHQ_conv_KHQ5D.xlsx",
-  sheetName = "Scores",
-  ignore.invalid = TRUE
-)
+KHQConvKHQ5D(scores = KHQ_Conv_KHQ5D_data, save.xlsx = FALSE,
+  filename = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores",
+  ignore.invalid = TRUE)
 }
 }
 \references{
 Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C.
 Estimation of a preference-based index from a condition-specific measure:
 the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26.
-doi: 10.1177/0272989X07301820.
+doi:10.1177/0272989X07301820.
 \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 }
 \keyword{dataset}

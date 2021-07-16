@@ -108,33 +108,20 @@
 #' @usage KHQ_data_Kelleher
 #' 
 #' @examples 
-#' \dontrun{
-#' KHQScores(
-#'   scores = KHQ_data_Kelleher,
-#'   country = "UK",
-#'   author = "Kelleher",
-#'   year = 1997,
-#'   ignore.invalid = TRUE
-#' )
+#' \donttest{
+#' KHQScores(scores = KHQ_data_Kelleher, country = "UK",
+#'   author = "Kelleher", year = 1997, ignore.invalid = TRUE)
 #' 
-#' or
-#' 
-#' KHQScores(
-#'   scores = KHQ_data_Kelleher,
-#'   country = "UK",
-#'   author = "Kelleher",
-#'   year = 1997,
-#'   save.xlsx = TRUE,
+#' KHQScores(scores = KHQ_data_Kelleher, country = "UK",
+#'   author = "Kelleher", year = 1997, save.xlsx = FALSE,
 #'   filename = "Res_Scores_Dimensions_KHQ.xlsx",
-#'   sheetName = "Scores",
-#'   ignore.invalid = TRUE
-#' )
+#'   sheetName = "Scores", ignore.invalid = TRUE)
 #' }
 #' 
 #' @source Example data
 #' @references Kelleher CJ, Cardozo LD, Khullar V, Salvatore S. A new questionnaire
 #'   to assess the quality of life of urinary incontinent women. Br J Obstet Gynaecol. 
-#'   1997 Dec;104(12):1374-9. doi: 10.1111/j.1471-0528.1997.tb11006.x. 
+#'   1997 Dec;104(12):1374-9. doi:10.1111/j.1471-0528.1997.tb11006.x. 
 #'   \href{https://pubmed.ncbi.nlm.nih.gov/9422015/}{PubMed}
 "KHQ_data_Kelleher"
 
@@ -178,38 +165,22 @@
 #' @usage KHQ5D_data
 #' 
 #' @examples 
-#' \dontrun{
-#' KHQ5D(
-#'   scores = KHQ5D_data,
-#'   country = "UK",
-#'   type = "SG",
-#'   author = "Brazier",
-#'   year = 2008,
-#'   source = "KHQ",
-#'   ignore.invalid = TRUE
-#' )
+#' \donttest{
+#' KHQ5D(scores = KHQ5D_data, country = "UK", type = "SG",
+#'   author = "Brazier", year = 2008, source = "KHQ",
+#'   ignore.invalid = TRUE)
 #' 
-#' or
-#' 
-#' #' KHQ5D(
-#'   scores = KHQ5D_data,
-#'   country = "UK",
-#'   type = "SG",
-#'   author = "Brazier",
-#'   year = 2008,
-#'   source = "KHQ",
-#'   save.xlsx = TRUE,
-#'   filename = "Res_KHQ5D_uti_ind.xlsx",
-#'   sheetName = "Utility_Index",
-#'   ignore.invalid = TRUE
-#' )
+#' KHQ5D(scores = KHQ5D_data, country = "UK", type = "SG",
+#'   author = "Brazier", year = 2008, source = "KHQ",
+#'   save.xlsx = FALSE, filename = "Res_KHQ5D_uti_ind.xlsx",
+#'   sheetName = "Utility_Index", ignore.invalid = TRUE)
 #' }
 #' 
 #' @source Example data
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
 #'   the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26. 
-#'   doi: 10.1177/0272989X07301820.
+#'   doi:10.1177/0272989X07301820.
 #'   \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 "KHQ5D_data"
 
@@ -256,7 +227,7 @@
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
 #'   the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26. 
-#'   doi: 10.1177/0272989X07301820.
+#'   doi:10.1177/0272989X07301820.
 #'   \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 "Utility_Index_data"
 
@@ -302,26 +273,17 @@
 #' 
 #' @usage KHQ_Conv_KHQ5D_data
 #' @examples 
-#' \dontrun{
-#' KHQConvKHQ5D(
-#'   scores = KHQ_Conv_KHQ5D_data,
-#'   ignore.invalid = TRUE
-#' )
+#' \donttest{
+#' KHQConvKHQ5D(scores = KHQ_Conv_KHQ5D_data, ignore.invalid = TRUE)
 #' 
-#' or
-#' 
-#' KHQConvKHQ5D(
-#'   scores = KHQ_Conv_KHQ5D_data,
-#'   save.xlsx = TRUE,
-#'   filename = "KHQ_conv_KHQ5D.xlsx",
-#'   sheetName = "Scores",
-#'   ignore.invalid = TRUE
-#' )
+#' KHQConvKHQ5D(scores = KHQ_Conv_KHQ5D_data, save.xlsx = FALSE,
+#'   filename = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores",
+#'   ignore.invalid = TRUE)
 #' }
 #' @source Example data
 #' @references Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C. 
 #'   Estimation of a preference-based index from a condition-specific measure: 
 #'   the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26. 
-#'   doi: 10.1177/0272989X07301820.
+#'   doi:10.1177/0272989X07301820.
 #'   \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 "KHQ_Conv_KHQ5D_data"

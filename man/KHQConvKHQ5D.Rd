@@ -39,22 +39,30 @@ items must be named equal the number in the original questionnaire (3a, 3b,
 4a, 4b, 4d, 5c, 6a, 6b, 7a).
 }
 \examples{
-\dontrun{
-KHQConvKHQ5D(
-  scores = KHQ_Conv_KHQ5D_data,
-  ignore.invalid = TRUE
-)
+scores.df <- data.frame(
+  "3a" = c(4,3,4,3,2), "3b" = c(4,3,4,3,2), 
+  "4a" = c(1,3,4,3,4), "4b" = c(1,3,4,3,4), 
+  "4d" = c(2,2,3,4,2), "5c" = c(2,2,3,4,2), 
+  "6a" = c(3,2,2,4,1), "6b" = c(3,2,2,4,1),
+  "7a" = c(1,3,4,3,4), check.names = FALSE)
 
-or
+KHQConvKHQ5D(scores = scores.df, ignore.invalid = FALSE)
 
-KHQConvKHQ5D(
-  scores = KHQ_Conv_KHQ5D_data,
-  save.xlsx = TRUE,
-  filename = "KHQ_conv_KHQ5D.xlsx",
-  sheetName = "Scores",
-  ignore.invalid = TRUE
-)
-}
+scores.df2 <- data.frame(
+  "3a" = c(4,3,4,3,2), "3b" = c(4,3,4,3,2), 
+  "4a" = c(1,3,4,3,4), "4b" = c(1,3,4,3,4), 
+  "4d" = c(2,2,3,4,2), "5c" = c(2,2,3,4,2), 
+  "6a" = c(3,2,2,4,1), "6b" = c(3,2,2,4,1),
+  "7a" = c(1,3,4,3,4), check.names = FALSE)
+
+KHQConvKHQ5D(scores = scores.df2, save.xlsx = FALSE,
+  filename = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores",
+  ignore.invalid = TRUE)
+
+KHQConvKHQ5D(scores = KHQ_Conv_KHQ5D_data, save.xlsx = FALSE,
+  filename = "KHQ_conv_KHQ5D.xlsx", sheetName = "Scores",
+  ignore.invalid = TRUE)
+
 }
 \seealso{
 \code{\link[KHQ]{KHQ5D}}

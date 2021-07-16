@@ -44,31 +44,15 @@ KHQ5D_data
 This data set contains an example of 30 responses of the KHQ5D.
 }
 \examples{
-\dontrun{
-KHQ5D(
-  scores = KHQ5D_data,
-  country = "UK",
-  type = "SG",
-  author = "Brazier",
-  year = 2008,
-  source = "KHQ",
-  ignore.invalid = TRUE
-)
+\donttest{
+KHQ5D(scores = KHQ5D_data, country = "UK", type = "SG",
+  author = "Brazier", year = 2008, source = "KHQ",
+  ignore.invalid = TRUE)
 
-or
-
-#' KHQ5D(
-  scores = KHQ5D_data,
-  country = "UK",
-  type = "SG",
-  author = "Brazier",
-  year = 2008,
-  source = "KHQ",
-  save.xlsx = TRUE,
-  filename = "Res_KHQ5D_uti_ind.xlsx",
-  sheetName = "Utility_Index",
-  ignore.invalid = TRUE
-)
+KHQ5D(scores = KHQ5D_data, country = "UK", type = "SG",
+  author = "Brazier", year = 2008, source = "KHQ",
+  save.xlsx = FALSE, filename = "Res_KHQ5D_uti_ind.xlsx",
+  sheetName = "Utility_Index", ignore.invalid = TRUE)
 }
 
 }
@@ -76,7 +60,7 @@ or
 Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C.
 Estimation of a preference-based index from a condition-specific measure:
 the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26.
-doi: 10.1177/0272989X07301820.
+doi:10.1177/0272989X07301820.
 \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 }
 \keyword{dataset}

@@ -60,28 +60,37 @@ the questionnaire published by Brusaca and collaborator in 2021 (1, 2, 3a, 3b,
 8f, 8g, 8h, 8i, 8j).
 }
 \examples{
-\dontrun{
-KHQScores(
-  scores = KHQ_data_Kelleher,
-  country = "UK",
-  author = "Kelleher",
-  year = 1997,
-  ignore.invalid = TRUE
-)
+scores_UK <- data.frame(
+  "1" = c(1,2,3,4,5,NA), "2" = c(1,2,3,4,NA,NA), 
+  "3a" = c(1,2,3,4,NA,NA), "3b" = c(1,2,3,4,NA,NA), 
+  "4a" = c(1,2,3,4,NA,NA), "4b" = c(1,2,3,4,NA,NA), 
+  "4c" = c(1,2,3,4,NA,1), "4d" = c(1,2,3,4,NA,1), 
+  "5a" = c(1,2,3,4,1,NA), "5b" = c(1,2,3,4,NA,1), 
+  "5c" = c(1,2,3,4,0,1), "6a" = c(1,2,3,4,NA,NA), 
+  "6b" = c(1,2,3,4,NA,NA), "6c" = c(1,2,3,4,NA,NA), 
+  "7a" = c(1,2,3,4,NA,NA), "7b" = c(1,2,3,4,NA,NA), 
+  "8a" = c(1,2,3,4,NA,NA), "8b" = c(1,2,3,4,NA,NA), 
+  "8c" = c(1,2,3,4,NA,NA), "8d" = c(1,2,3,4,NA,NA), 
+  "8e" = c(1,2,3,4,NA,NA), "9a" = c(0,1,2,3,NA,NA), 
+  "9b" = c(0,1,2,3,NA,NA), "9c" = c(0,1,2,3,NA,NA), 
+  "9d" = c(0,1,2,3,NA,NA), "9e" = c(0,1,2,3,NA,NA), 
+  "9f" = c(0,1,2,3,NA,NA), "9g" = c(0,1,2,3,NA,NA), 
+  "9h" = c(0,1,2,3,NA,NA), "9i" = c(0,1,2,3,NA,NA), 
+  "9j" = c(0,1,2,3,NA,NA), "9k" = c(0,1,2,3,NA,NA), 
+  check.names = FALSE)
 
-or
-
-KHQScores(
-  scores = KHQ_data_Kelleher,
-  country = "UK",
-  author = "Kelleher",
-  year = 1997,
-  save.xlsx = TRUE,
+KHQScores(scores = scores_UK, country = "UK",
+  author = "Kelleher", year = 1997, ignore.invalid = TRUE)
+  
+KHQScores(scores = scores_UK, country = "UK",
+  author = "Kelleher", year = 1997, save.xlsx = FALSE,
   filename = "Res_Scores_Dimensions_KHQ.xlsx",
-  sheetName = "Scores",
-  ignore.invalid = TRUE
-)
-}
+  sheetName = "Scores", ignore.invalid = TRUE)
+
+KHQScores(scores = KHQ_data_Kelleher, country = "UK",
+  author = "Kelleher", year = 1997, save.xlsx = FALSE,
+  filename = "Res_Scores_Dimensions_KHQ.xlsx",
+  sheetName = "Scores", ignore.invalid = TRUE)
 
 }
 \seealso{

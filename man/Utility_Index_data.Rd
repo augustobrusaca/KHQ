@@ -48,7 +48,7 @@ This data set contains the weights to calculate the utility index of the KHQ5D.
 Brazier J, Czoski-Murray C, Roberts J, Brown M, Symonds T, Kelleher C.
 Estimation of a preference-based index from a condition-specific measure:
 the King's Health Questionnaire. Med Decis Making. 2008 Jan-Feb;28(1):113-26.
-doi: 10.1177/0272989X07301820.
+doi:10.1177/0272989X07301820.
 \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}
 }
 \keyword{dataset}
