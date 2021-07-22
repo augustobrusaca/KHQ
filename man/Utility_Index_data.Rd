@@ -5,7 +5,7 @@
 \alias{Utility_Index_data}
 \title{Utility Index weights of the KHQ5D}
 \format{
-This data frame has 30 rows and the following 5 columns:
+This data frame has 30 rows and the following 2 columns:
 \describe{
 \item{UK}{UK KHQ5D weights. \href{https://pubmed.ncbi.nlm.nih.gov/17641139/}{PubMed}}
 \item{Variables}{FullHealth - Best health, usually indicated as 1;

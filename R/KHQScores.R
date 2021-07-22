@@ -91,8 +91,6 @@
 #'   filename = "Res_Scores_Dimensions_KHQ.xlsx",
 #'   sheetName = "Scores", ignore.invalid = TRUE)
 #' 
-#' @seealso 
-#'  \code{\link[KHQ]{KHQConvKHQ5D}}
 #' @rdname KHQScores
 #' @export 
 #' @importFrom magrittr %>%

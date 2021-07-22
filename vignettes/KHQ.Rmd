@@ -22,24 +22,24 @@ knitr::opts_chunk$set(
 
 ## King’s Health Questionnaire (KHQ)
 
-The KHQ is a disease-specific, self-administered questionnaire designed specific to assess the impact of Urinary incontinence (UI) on QoL. The questionnaire was developed by [Kelleher and collaborators in 1997](https://doi.org/10.1111/j.1471-0528.1997.tb11006.x). It is a simple, acceptable and reliable measure to use in the clinical setting and a research tool that is useful in evaluating UI treatment outcomes.
+The KHQ is a disease-specific, self-administered questionnaire designed specific to assess the impact of Urinary incontinence (UI) on Quality of Life (QoL). The questionnaire was developed by [Kelleher and collaborators in 1997](https://doi.org/10.1111/j.1471-0528.1997.tb11006.x). It is a simple, acceptable and reliable measure to use in the clinical setting and a research tool that is useful in evaluating UI treatment outcomes.
 
 The KHQ consists of two parts and 32 items. The first part is composed by 21 items investigating nine domains with four to five response categories – Likert scale. There are two single-item questions that address General Health Perception (GHP) and Incontinence Impact (II). The following seven multi-item domains are: Role Limitations (RL; 2 items), Physical Limitations (PL; 2 items), Social Limitations (SL; 2 items), Personal Relationships (PR; 3 items), Emotions (E; 3 items), Sleep and Energy Disturbances associated with UI (SE; 2 items), and Severity Measures for UI (SM; 5 items). The second part is a 11-item Symptom Severity Scale (SSS) that assesses the presence and severity of urinary symptoms. The KHQ is scored by domain, and scores range from 0 (best QoL) to 100 (worst QoL). While the SSS is scored by adding the 11 items, thus ranging from 0 (best) to 33 (worst).
 
 ## KHQ five dimensions (KHQ5D)
 
-The KHQ5D is a condition-specific preference-based measure developed by [Brazier and collaborators in 2008](https://doi.org/10.1177/0272989X07301820). Although not as popular as the [SF6D](https://doi.org/10.1016/S0895-4356(98)00103-6) and [EQ-5D](https://euroqol.org/), the KHQ5D measures health-related quality of life (HRQoL) specifically for UI, not general conditions like the others two instruments mentioned. The KHQ5D ca be used in the clinical and economic evaluation of health care. The subject self-rates their health in terms of five dimensions: Role Limitation (RL), Physical Limitations (PL), Social Limitations (SL), Emotions (E), and Sleep (S). Following assessment, the scores can be reported as a five-digit number ranging from 11111 (full health) to 44444 (worst health). This five-digit number are converted to a single utility index using country specific value sets, which can be used in the clinical and economic evaluation of health care as well as in population health surveys.
+The KHQ5D is a condition-specific preference-based measure developed by [Brazier and collaborators in 2008](https://doi.org/10.1177/0272989X07301820). Although not as popular as the [SF6D](https://doi.org/10.1016/S0895-4356(98)00103-6) and [EQ-5D](https://euroqol.org/), the KHQ5D measures health-related quality of life (HRQoL) specifically for UI, not general conditions like the others two instruments mentioned. The KHQ5D can be used in the clinical and economic evaluation of health care. The subject self-rates their health in terms of five dimensions: Role Limitation (RL), Physical Limitations (PL), Social Limitations (SL), Emotions (E), and Sleep (S). Following assessment, the Health States (i.e., scores) are reported as a five-digit number ranging from 11111 (full health) to 44444 (worst health). This five-digit Health Profiles are converted to a single utility value (utility index, index value) using country specific value sets, which can be used in the clinical and economic evaluation of health care as well as in population health surveys.
 
 
 ## Installation
 
-You can install the released version of KHQ from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of KHQ from [CRAN](https://CRAN.R-project.org/package=KHQ) with:
 
 ``` r
 install.packages("KHQ")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+And the development version from [GitHub](https://github.com/augustobrusaca/KHQ) with:
 
 ``` r
 # install.packages("devtools")
@@ -332,7 +332,7 @@ KHQConvKHQ5D(scores = scores, ignore.invalid = FALSE)
 
 ## Information
 
-Consult the documentation for each function and example data within the package using ?[name] of the function or example data.
+Consult the documentation for each function and example data within the package using ?[name] of the function or example data. It is also possible to download the [reference manual]((https://cran.r-project.org/web/packages/KHQ/KHQ.pdf)) from the [CRAN](https://CRAN.R-project.org/package=KHQ) repository.
 
 Example: ?KHQScores
 

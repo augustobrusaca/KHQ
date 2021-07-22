@@ -5,6 +5,8 @@
 [![R-CMD-check](https://github.com/augustobrusaca/KHQ/workflows/R-CMD-check/badge.svg)](https://github.com/augustobrusaca/KHQ/actions)
 [![Travis-CI Build
 Status](https://travis-ci.com/augustobrusaca/KHQ.svg?branch=master)](https://travis-ci.com/augustobrusaca/KHQ)
+[![CRAN RStudio mirror
+downloads](https://cranlogs.r-pkg.org/badges/KHQ)](https://www.r-pkg.org:443/pkg/KHQ)
 <!-- badges: end -->
 
 # KHQ
@@ -12,8 +14,9 @@ Status](https://travis-ci.com/augustobrusaca/KHQ.svg?branch=master)](https://tra
 ## King’s Health Questionnaire (KHQ)
 
 The KHQ is a disease-specific, self-administered questionnaire designed
-specific to assess the impact of Urinary incontinence (UI) on QoL. The
-questionnaire was developed by [Kelleher and collaborators in
+specific to assess the impact of Urinary incontinence (UI) on Quality of
+Life (QoL). The questionnaire was developed by [Kelleher and
+collaborators in
 1997](https://doi.org/10.1111/j.1471-0528.1997.tb11006.x). It is a
 simple, acceptable and reliable measure to use in the clinical setting
 and a research tool that is useful in evaluating UI treatment outcomes.
@@ -40,29 +43,28 @@ The KHQ5D is a condition-specific preference-based measure developed by
 as the [SF6D](https://doi.org/10.1016/S0895-4356(98)00103-6) and
 [EQ-5D](https://euroqol.org/), the KHQ5D measures health-related quality
 of life (HRQoL) specifically for UI, not general conditions like the
-others two instruments mentioned. The KHQ5D ca be used in the clinical
+others two instruments mentioned. The KHQ5D can be used in the clinical
 and economic evaluation of health care. The subject self-rates their
 health in terms of five dimensions: Role Limitation (RL), Physical
 Limitations (PL), Social Limitations (SL), Emotions (E), and Sleep (S).
-Following assessment, the scores can be reported as a five-digit number
-ranging from 11111 (full health) to 44444 (worst health). This
-five-digit number are converted to a single utility index using country
-specific value sets, which can be used in the clinical and economic
-evaluation of health care as well as in population health surveys.
+Following assessment, the Health States (i.e., scores) are reported as a
+five-digit number ranging from 11111 (full health) to 44444 (worst
+health). This five-digit Health Profiles are converted to a single
+utility value (utility index, index value) using country specific value
+sets, which can be used in the clinical and economic evaluation of
+health care as well as in population health surveys.
 
 ## Installation
 
 You can install the released version of KHQ from
-[CRAN](https://CRAN.R-project.org) with:
-
-Of note - the package is not yet released on CRAN, download directly
-from GitHub, option below.
+[CRAN](https://CRAN.R-project.org/package=KHQ) with:
 
 ``` r
-# install.packages("KHQ")
+install.packages("KHQ")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+And the development version from
+[GitHub](https://github.com/augustobrusaca/KHQ) with:
 
 ``` r
 install.packages("devtools")
@@ -537,7 +539,10 @@ KHQConvKHQ5D(scores = scores, ignore.invalid = FALSE)
 ## Information
 
 Consult the documentation for each function and example data within the
-package using ?\[name\] of the function or example data.
+package using ?\[name\] of the function or example data. It is also
+possible to download the [reference
+manual]((https://cran.r-project.org/web/packages/KHQ/KHQ.pdf)) from the
+[CRAN](https://CRAN.R-project.org/package=KHQ) repository.
 
 Example: ?KHQScores
 

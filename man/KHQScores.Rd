@@ -93,6 +93,3 @@ KHQScores(scores = KHQ_data_Kelleher, country = "UK",
   sheetName = "Scores", ignore.invalid = TRUE)
 
 }
-\seealso{
-\code{\link[KHQ]{KHQConvKHQ5D}}
-}
