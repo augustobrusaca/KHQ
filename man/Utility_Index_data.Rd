@@ -3,7 +3,7 @@
 \docType{data}
 \name{Utility_Index_data}
 \alias{Utility_Index_data}
-\title{Utility Index weights of the KHQ5D}
+\title{Value sets of the KHQ5D}
 \format{
 This data frame has 30 rows and the following 2 columns:
 \describe{

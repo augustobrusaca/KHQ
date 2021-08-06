@@ -185,7 +185,7 @@
 "KHQ5D_data"
 
 
-#' Utility Index weights of the KHQ5D
+#' Value sets of the KHQ5D
 #' @docType data
 #' 
 #' @keywords dataset
