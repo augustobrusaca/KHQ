@@ -665,8 +665,8 @@ Consult the documentation for each function and example data within the
 package using ?\[name\] of the function or example data. It is also
 possible to consult the functions on the [R Package
 Documentation](https://rdrr.io/cran/KHQ/man/) website or download the
-[reference manual](https://cran.r-project.org/web/packages/KHQ/KHQ.pdf)
-from the [CRAN](https://CRAN.R-project.org/package=KHQ) repository.
+reference manual from the [CRAN](https://CRAN.R-project.org/package=KHQ)
+repository.
 
 Example: ?KHQScores
 
