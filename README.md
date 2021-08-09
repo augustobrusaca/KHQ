@@ -687,8 +687,8 @@ More coming soon. New ideas are welcome.
 
 If you use this package, please cite it as follow:
 
-Luiz Augusto Brusaca (2021). KHQ: Methods for Calculating ‘KHQ’ Scores
-and ‘KHQ5D’ Utility Index Scores. R package version 0.2.0.
+Brusaca, L.A. (2021). KHQ: Methods for Calculating ‘KHQ’ Scores and
+‘KHQ5D’ Utility Index Scores. R package version 0.2.0.
 <https://github.com/augustobrusaca/KHQ>
 
 ## License
